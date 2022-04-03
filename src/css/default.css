@@ -17,6 +17,7 @@ html {
     --color-main: #004F68;
     --color-main-darker: #003b4d;
     --color-main-lighter: #006280;
+    --color-secondary: #009ccc;
     --color-accent: #E4EAF0;
     --color-success: #4BB543;
     --color-error:#ff3333;
@@ -25,4 +26,5 @@ html {
 body {
     font-family: 'Lato', Arial, sans-serif;
     background-color: var(--color-accent);
+    min-height: 100vh;
 }
