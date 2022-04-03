@@ -1,16 +1,36 @@
 body {
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5rem;
+    gap: 3rem; */
+    /* margin: 5rem; */
 }
+
+.container__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--color-main);
+    color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 1.2em;
+}
+
+.header__logo {
+    max-width: 250px;
+    height: 120px;
+}
+
 
 form {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     width: 100%;
 }
 
-.container {
+.container__form {
     background-color: #ffffff;
     width: 400px;
     max-width: 400px;
@@ -20,6 +40,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 2rem auto;
 }
 
 .form__message, .form__text {
@@ -55,10 +76,23 @@ form {
     margin-bottom: 1rem;
 }
 
+.form__input-group i {
+    position: absolute;
+}
+
+.form__input-icon {
+    margin-left: 0.2rem;
+    padding: 13px 0.7em 0.5em;
+    color: var(--color-main);
+    min-width: 50px;
+    text-align: center;
+}
+
 .form__input {
     display: block;
     width: 100%;
     padding: 1em;
+    padding-left: 50px;
     border-radius: 30px;
     background-color: var(--color-accent);
     border: 1px solid var(--color-main);
