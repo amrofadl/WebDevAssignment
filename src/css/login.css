@@ -7,6 +7,7 @@ body {
 
 form {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 .container {
@@ -24,6 +25,10 @@ form {
 .form__message, .form__text {
     font-size: 0.9rem;
     margin-top: 1rem;
+}
+
+.form--hidden {
+    display: none;
 }
 
 .form__title {
@@ -62,9 +67,10 @@ form {
 }
 
 .form__input:focus {
-    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.55);
-    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.55);
-    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    background-color: #ffffff;
 }
 
 .form__input--error {
@@ -78,6 +84,47 @@ form {
     color: var(--color-error);
 }
 
-.form__text {
+.container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.form__button {
+    width: 60%;
+    padding: 0.7em 1.2em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-main);
+    margin: 0 auto;
+}
+
+.form__button:hover {
+    background-color: var(--color-main-lighter);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+
+h1, .form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-main);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
 }
