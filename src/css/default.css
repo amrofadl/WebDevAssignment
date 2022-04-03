@@ -26,4 +26,5 @@ html {
 body {
     font-family: 'Lato', Arial, sans-serif;
     background-color: var(--color-accent);
+    min-height: 100vh;
 }
