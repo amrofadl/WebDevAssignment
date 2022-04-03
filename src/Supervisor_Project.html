@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
-
+    <link rel="stylesheet" href="./css/project.css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
 
     <title>Project</title>
@@ -23,7 +23,7 @@
             <div class="nav-bar__page-list">
                 <ul id="myDiv">
                     <li><a class="page-button" href="./Supervisor_Dashboard.html"><span class="page-icon"><i class="fa-brands fa-trello"></i></span>Dashboard</a></li>
-                    <li><a class="page-button active" href="./Student_Project.html"><span class="page-icon"><i class="fa-solid fa-briefcase"></i></span>Projects</a></li>
+                    <li><a class="page-button active" href="./Supervisor_Project.html"><span class="page-icon"><i class="fa-solid fa-briefcase"></i></span>Projects</a></li>
                     <li><a class="page-button" href="./Supervisor_Meeting.html"><span class="page-icon"><i class="fa-solid fa-calendar-days"></i></span>Meetings</a></li>
                     <li><a class="page-button" href="./Supervisor_Goals.html"><span class="page-icon"><i class="fa-solid fa-bullseye"></i></span>Goals</a></li>
                     <li><a class="page-button" href="./Supervisor_Assessment.html"><span class="page-icon"><i class="fa-solid fa-clipboard-list"></i></span>Assessment</a></li>
@@ -31,6 +31,48 @@
             </div>
             <div class="wrapper__sign-out">
                 <a id="signout" href="Login_Register.html">Sign Out</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container__content">
+        <div class="container__project">
+            <h1 class="content-title">Projects</h1>
+            <div class="wrapper__button">
+                <div class="button--left-group">
+                    <div>
+                        <button class="button">Proposals</button>
+                    </div>
+                    <div>
+                        <button class="button">Projects</button>
+                    </div>
+                </div>
+                <div class="button--right-group">
+                    <div>
+                        <button class="button button-add"><span class="icon"><i class="fa-solid fa-plus"></i></span></i>Add Proposal</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card proposal-card">
+                <table class="proposal-card--table">
+                    <thead>
+                        <caption>Proposals</caption>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Owner</th>
+                            <th>Proposal</th>
+                            <th>Published Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Test</td>
+                            <td>Text</td>
+                            <td><a href="">Project_Proposal.pdf</a></td>
+                            <td>May 1, 2022</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

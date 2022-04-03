@@ -13,13 +13,6 @@ h1, h2 {
     color: var(--color-main);
 }
 
-/* .wrapper__sign-out {
-    padding-top: 0.6em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-} */
-
 .container__dashboard {
     width: 100%;
     display: flex;

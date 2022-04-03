@@ -1,0 +1,84 @@
+.container__content {
+    margin-left: 300px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.wrapper__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button--left-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    color: var(--color-main);
+    background-color: #fff;
+    padding: 0.9em 1.2em;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.button-add .icon {
+    margin-right: 10px;
+}
+
+.button-add {
+    color: #fff;
+    background-color: var(--color-main);
+}
+
+.content-title {
+    color: var(--color-main);
+}
+
+.card {
+    width: 100%;
+    min-width: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.card-hidden {
+    display: none;
+}
+
+.proposal-card--table {
+    margin: 0.5em auto;
+    width: 95%;
+    font-size: 0.85em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.proposal-card--table caption {
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+    background-color: var(--color-main-lighter);
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.proposal-card--table td,
+.proposal-card--table th {
+    text-align: left;
+    padding: 0.65rem;
+}
