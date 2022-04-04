@@ -25,7 +25,7 @@
 
 .button {
     color: var(--color-main);
-    background-color: #fff;
+    background-color: var(--color-bright);
     padding: 0.9em 1.2em;
     outline: none;
     border-radius: 30px;
@@ -41,7 +41,7 @@
 
 .button:hover {
     background-color: var(--color-main-lighter);
-    color: #fff;
+    color: var(--color-bright);
 }
 
 .button:active {
@@ -70,7 +70,7 @@
 .card {
     max-width: 200px;
     height: 200px;
-    background-color: #fff;
+    background-color: var(--color-bright);
     border-radius: 15px;
     padding: 1.5em;
     flex: 1 0 auto;

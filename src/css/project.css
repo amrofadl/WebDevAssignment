@@ -25,7 +25,7 @@
 
 .button {
     color: var(--color-main);
-    background-color: #fff;
+    background-color: var(--color-bright);
     padding: 0.9em 1.2em;
     outline: none;
     border-radius: 30px;
@@ -40,13 +40,13 @@
 }
 
 .button-add {
-    color: #fff;
+    color: var(--color-bright);
     background-color: var(--color-main);
 }
 
 .button:hover {
     background-color: var(--color-main-lighter);
-    color: #fff;
+    color: var(--color-bright);
 }
 
 .button:active {
@@ -64,7 +64,7 @@
 .card {
     width: 100%;
     min-width: 450px;
-    background-color: #fff;
+    background-color: var(--color-bright);
     border-radius: 15px;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .table caption {
-    color: #fff;
+    color: var(--color-bright);
     text-align: center;
     padding: 0.5em;
     font-weight: bold;
@@ -203,7 +203,7 @@
 
 .button-card {
     background-color: var(--color-main);
-    color: #fff;
+    color: var(--color-bright);
 }
 
 .button-card:hover {

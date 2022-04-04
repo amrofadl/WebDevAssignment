@@ -1,6 +1,6 @@
 .nav-bar {
     background-color: var(--color-main);
-    color: #ffffff;
+    color: var(--color-bright);
     width: 270px;
     position: fixed;
     height: 100%;
@@ -37,7 +37,7 @@
 
 #signout {
     background-color: var(--color-main-darker);
-    color: #ffffff;
+    color: var(--color-bright);
     text-decoration: none;
     display: block;
     height: 100%;
@@ -50,7 +50,7 @@
 
 #signout:hover {
     color: var(--color-main);
-    background-color: #ffffff;
+    background-color: var(--color-bright);
     font-weight: 600;
 }
 
@@ -66,7 +66,7 @@
 .nav-bar__page-list .page-button  {
     display: block;
     padding: 1em 1.2rem;
-    color: #ffffff;
+    color: var(--color-bright);
     text-decoration: none;
 }
 
@@ -77,5 +77,5 @@
 
 .page-icon {
     margin-right: 10px;
-    color: #ffffff;
+    color: var(--color-bright);
 }

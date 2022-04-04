@@ -14,7 +14,7 @@ body {
     gap: 1rem;
     flex-wrap: wrap;
     background-color: var(--color-main);
-    color: #ffffff;
+    color: var(--color-bright)fff;
     margin-bottom: 2rem;
     padding: 1.2em;
 }
@@ -31,7 +31,7 @@ form {
 }
 
 .container__form {
-    background-color: #ffffff;
+    background-color: var(--color-bright)fff;
     width: 400px;
     max-width: 400px;
     padding: 1.5em;
@@ -104,7 +104,7 @@ form {
     -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
     -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
     box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
-    background-color: #ffffff;
+    background-color: var(--color-bright)fff;
 }
 
 .form__input--error {
@@ -130,7 +130,7 @@ form {
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 1rem;
-    color: #ffffff;
+    color: var(--color-bright)fff;
     border: none;
     border-radius: 30px;
     outline: none;

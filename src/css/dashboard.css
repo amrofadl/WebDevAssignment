@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 .card {
-    background-color: #fff;
+    background-color: var(--color-bright);
     flex: 1 0 auto;
     width: 200px;
     height: 500px;
@@ -37,7 +37,7 @@ h1, h2 {
 }
 
 .card__title {
-    color: #fff;
+    color: var(--color-bright);
     text-align: center;
     padding: 0.5em;
     font-weight: bold;
