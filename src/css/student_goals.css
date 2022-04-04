@@ -1,0 +1,62 @@
+.container__content {
+    margin-left: 300px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__goals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.content-title {
+    color: var(--color-main);
+}
+
+.container__card {
+    background-color: var(--color-bright);
+    padding: 1.25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-radius: 15px;
+}
+
+.title {
+    color: var(--color-bright);
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+    background-color: var(--color-main-lighter);
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.card {
+    width: 100%;
+    background-color: #e8e7e6;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    padding: 1.2em;
+    overflow-wrap: break-word;
+    scrollbar-gutter: stable;
+}
+
+.card-hidden {
+    display: none;
+}
+
+.card__icon {
+    margin-right: 10px;
+}
+
+.card__duedate {
+    font-size: 0.9rem;
+    position: relative;
+    left: 33px;
+}
