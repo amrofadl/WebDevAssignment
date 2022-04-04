@@ -44,6 +44,19 @@
     background-color: var(--color-main);
 }
 
+.button:hover {
+    background-color: var(--color-main-lighter);
+    color: #fff;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.button-active {
+    border: 1px solid var(--color-main-darker);
+}
+
 .content-title {
     color: var(--color-main);
 }
@@ -59,7 +72,7 @@
     display: none;
 }
 
-.proposal-card--table {
+.table {
     margin: 0.5em auto;
     width: 95%;
     font-size: 0.85em;
@@ -67,7 +80,7 @@
     border-spacing: 0;
 }
 
-.proposal-card--table caption {
+.table caption {
     color: #fff;
     text-align: center;
     padding: 0.5em;
@@ -77,8 +90,119 @@
     border-radius: 10px;
 }
 
-.proposal-card--table td,
-.proposal-card--table th {
+.table  td,
+.table th {
     text-align: left;
     padding: 0.65rem;
+}
+
+/* ///////////////////////////////////// */
+/* //////////// project status /////////*/
+/* /////////////////////////////////// */
+
+.status {
+    padding: 0.4em;
+    background-color: var(--color-pending-bg);
+    color: #000;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.status-pending {
+    background-color: var(--color-pending-bg);
+    color: #000;
+}
+.status-accepted {
+    background-color: var(--color-accepted-bg);
+    color: var(--color-accepted);
+}
+
+.status-rejected {
+    background-color: var(--color-rejected-bg);
+    color: var(--color-rejected);
+}
+
+.table-edit-button {
+    background-color: none;
+    border: none;
+    outline: none;
+    padding: 0.4em;
+    margin-left: 0.5rem;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.form__my-project {
+    padding: 1rem;
+}
+
+.form__my-project h2{
+    margin-bottom: 0.6rem;
+}
+
+.project-info {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.project-info p{
+    margin-top: 0.2rem;
+}
+
+.wrapper__file-upload {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.wrapper__file-upload p{
+    margin-bottom: 0.2rem;
+    display: inline-flex;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-main-lighter);
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: var(--color-main-darker);
+}
+
+.inputfile + label {
+	cursor: pointer;
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.wrapper__button-card {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+}
+
+.button-card {
+    background-color: var(--color-main);
+    color: #fff;
+}
+
+.button-card:hover {
+    background-color: var(--color-main-lighter);
+    transform: scale(0.98);
 }

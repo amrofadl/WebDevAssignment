@@ -21,6 +21,11 @@ html {
     --color-accent: #E4EAF0;
     --color-success: #4BB543;
     --color-error:#ff3333;
+    --color-pending-bg: #F0F0F0;
+    --color-accepted: #218F65;
+    --color-accepted-bg: #EFFBF7;
+    --color-rejected: #B23B3B;
+    --color-rejected-bg: #FCDDEC;
 }
 
 body {

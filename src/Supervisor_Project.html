@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/project.css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
-
+    <script src="./js/project.js"></script>
     <title>Project</title>
 </head>
 <body>
@@ -41,20 +41,20 @@
             <div class="wrapper__button">
                 <div class="button--left-group">
                     <div>
-                        <button class="button">Proposals</button>
+                        <button id="proposalsBtn" class="button button-active">Proposals</button>
                     </div>
                     <div>
-                        <button class="button">Projects</button>
+                        <button id="projectsBtn" class="button">Projects Status</button>
                     </div>
                 </div>
                 <div class="button--right-group">
                     <div>
-                        <button class="button button-add"><span class="icon"><i class="fa-solid fa-plus"></i></span></i>Add Proposal</button>
+                        <button id="addProposal" class="button button-add"><span class="icon"><i class="fa-solid fa-plus"></i></span></i>Add Proposal</button>
                     </div>
                 </div>
             </div>
-            <div class="card proposal-card">
-                <table class="proposal-card--table">
+            <div id="proposalTable" class="card card__proposal-card ">
+                <table class="table table--proposal">
                     <thead>
                         <caption>Proposals</caption>
                         <tr>
@@ -74,6 +74,76 @@
                     </tbody>
                 </table>
             </div>
+
+            <!-- TODO: form? or no -->
+            <div id="projStatusTable" class="card card__project-status card-hidden">
+                <div>
+                    <table class="table project-status--table">
+                        <caption>Project Status</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Project Title</th>
+                                <th>Student</th>
+                                <th>Proposal</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <input type="checkbox" id="" name="index[]" value="">
+                                </td>
+                                <td>Test</td>
+                                <td>Text</td>
+                                <td><a href="">Project_Proposal.pdf</a></td>
+                                <td>
+                                    <span class="status status-pending">Pending</span>
+                                </td>
+                                <td>
+                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-pencil"></i></span></button>
+                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-trash-can"></i></span></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-checkbox">
+                                    <input type="checkbox" id="" name="index[]" value="">
+                                </td>
+                                <td>Test</td>
+                                <td>Text</td>
+                                <td><a href="">Project_Proposal.pdf</a></td>
+                                <td>
+                                    <span class="status status-accepted">Accepted</span>
+                                </td>
+                                <td>
+                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-pencil"></i></span></button>
+                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-trash-can"></i></span></button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-checkbox">
+                                    <input type="checkbox" id="" name="index[]" value="">
+                                </td>
+                                <td>Test</td>
+                                <td>Text</td>
+                                <td><a href="">Project_Proposal.pdf</a></td>
+                                <td>
+                                    <span class="status status-rejected">Rejected</span>
+                                </td>
+                                <td>
+                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-pencil"></i></span></button>
+                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-trash-can"></i></span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
