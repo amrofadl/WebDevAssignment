@@ -1,0 +1,272 @@
+.container__content {
+    margin-left: 300px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__meeting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.wrapper__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button--left-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    color: var(--color-main);
+    background-color: #fff;
+    padding: 0.9em 1.2em;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.button-add .icon {
+    margin-right: 10px;
+}
+
+.button-add {
+    color: #fff;
+    background-color: var(--color-main);
+}
+
+.button:hover {
+    background-color: var(--color-main-lighter);
+    color: #fff;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.button-active {
+    border: 1px solid var(--color-main-darker);
+}
+
+.button-add--active {
+    border: 2px solid var(--color-main-darker);
+    background-color: var(--color-main-lighter);
+    transform: scale(0.96);
+}
+
+.content-title {
+    color: var(--color-main);
+}
+
+.card {
+    width: 100%;
+    min-width: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.card-hidden {
+    display: none;
+}
+
+.table {
+    margin: 0.5em auto;
+    width: 95%;
+    font-size: 0.85em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table caption {
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+    background-color: var(--color-main-lighter);
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.table  td,
+.table th {
+    text-align: left;
+    padding: 0.65rem;
+}
+
+.table-edit-button {
+    background-color: none;
+    border: none;
+    outline: none;
+    padding: 0.4em;
+    margin-left: 0.5rem;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+/* /////////////////////////////// */
+/* /////////  Create Meeting //////// */
+/* ///////////////////////////// */
+
+
+.form {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.card__create-meeting {
+    /* background-color: #ffffff; */
+    width: 400px;
+    max-width: 400px;
+    padding: 1.5em;
+    border-radius: 30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    margin: 2rem auto;
+}
+
+.form__message, .form__text {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.form--hidden {
+    display: none;
+}
+
+.form__title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: 500;
+    background-color: var(--color-main-lighter);
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.form__message  {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.form__message--success  {
+    color: var(--color-success);
+}
+
+.form__message--error  {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input-label{
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+.form__input-group i {
+    position: absolute;
+}
+
+.form__input-icon {
+    margin-left: 0.2rem;
+    padding: 13px 0.7em 0.5em;
+    color: var(--color-main);
+    min-width: 50px;
+    text-align: center;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    padding-left: 50px;
+    border-radius: 30px;
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-main);
+    outline: none;
+    transition: background 0.2s;
+}
+
+.form__input:focus {
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    background-color: #ffffff;
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.container__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form__button {
+    width: 60%;
+    padding: 0.7em 1.2em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-main);
+    margin: 0 auto;
+}
+
+/* .form__button--create {
+    flex-grow: 2;
+} */
+
+.form__button:hover {
+    background-color: var(--color-main-lighter);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-main);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}

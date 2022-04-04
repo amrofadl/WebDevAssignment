@@ -1,0 +1,98 @@
+.container__content {
+    margin-left: 300px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__meeting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.wrapper__button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    color: var(--color-main);
+    background-color: #fff;
+    padding: 0.9em 1.2em;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card__icon {
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: var(--color-main-lighter);
+    color: #fff;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.button-active {
+    border: 1px solid var(--color-main-darker);
+}
+
+.button-add--active {
+    border: 2px solid var(--color-main-darker);
+    background-color: var(--color-main-lighter);
+    transform: scale(0.96);
+}
+
+.content-title {
+    color: var(--color-main);
+}
+.container__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    max-width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1.5em;
+    flex: 1 0 auto;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    scrollbar-gutter: stable;
+}
+
+.card::-webkit-scrollbar {
+    width: 0.3rem;
+}
+ 
+.card::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+ 
+.card::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    border-radius: 100px;
+}
+
+.card-hidden {
+    display: none;
+}
