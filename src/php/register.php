@@ -16,7 +16,7 @@
         $execval = $stmt->execute();
         $stmt->close();
         $conn->close();
-        header("Location: ../login_register.html");
+        header("Location: ../login_register.php");
         exit;
     }
 ?>

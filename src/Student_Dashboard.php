@@ -17,20 +17,20 @@
             <div>
                 <img class="" src="./images/User.png" alt="User Icon">
             </div>
-            <div id="userType">UserType - Supervisor</div>
+            <div id="userType">UserType - Student</div>
         </div>
         <div class="wrapper__page-button">
             <div class="nav-bar__page-list">
                 <ul id="myDiv">
-                    <li><a class="page-button active" href="./Supervisor_Dashboard.html"><span class="page-icon"><i class="fa-brands fa-trello"></i></span>Dashboard</a></li>
-                    <li><a class="page-button" href="./Supervisor_Project.html"><span class="page-icon"><i class="fa-solid fa-briefcase"></i></span>Projects</a></li>
-                    <li><a class="page-button" href="./Supervisor_Meeting.html"><span class="page-icon"><i class="fa-solid fa-calendar-days"></i></span>Meetings</a></li>
-                    <li><a class="page-button" href="./Supervisor_Goals.html"><span class="page-icon"><i class="fa-solid fa-bullseye"></i></span>Goals</a></li>
-                    <li><a class="page-button" href="./Supervisor_Assessment.html"><span class="page-icon"><i class="fa-solid fa-clipboard-list"></i></span>Assessment</a></li>
+                    <li><a class="page-button active" href="./Student_Dashboard.php"><span class="page-icon"><i class="fa-brands fa-trello"></i></span>Dashboard</a></li>
+                    <li><a class="page-button" href="./Student_Project.php"><span class="page-icon"><i class="fa-solid fa-briefcase"></i></span>Projects</a></li>
+                    <li><a class="page-button" href="./Student_Meeting.php"><span class="page-icon"><i class="fa-solid fa-calendar-days"></i></span>Meetings</a></li>
+                    <li><a class="page-button" href="./Student_Goals.php"><span class="page-icon"><i class="fa-solid fa-bullseye"></i></span>Goals</a></li>
+                    <li><a class="page-button" href="./Student_Assessment.php"><span class="page-icon"><i class="fa-solid fa-clipboard-list"></i></span>Assessment</a></li>
                 </ul>
             </div>
             <div class="wrapper__sign-out">
-                <a id="signout" href="Login_Register.html">Sign Out</a>
+                <a id="signout" href="Login_Register.php">Sign Out</a>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
             <hr>
             <div class="container__card">
                 <div class="card">
-                    <h2 class="card__title">PROJECTS</h2>
+                    <h2 class="card__title">MY PROJECTS</h2>
                     <!--  -->
                 </div>
                 <div class="card">
