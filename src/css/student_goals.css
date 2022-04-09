@@ -17,13 +17,15 @@
     color: var(--color-main);
 }
 
-.container__card {
+.container__goals-list {
+    max-height: 550px;
     background-color: var(--color-bright);
     padding: 1.25em;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
-    border-radius: 15px;
+    gap: 1rem;
+    border-radius: 8px;
+
 }
 
 .title {
@@ -36,12 +38,31 @@
     border-radius: 10px;
 }
 
+.container__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
+.container__card::-webkit-scrollbar {
+    width: 0.3rem;
+}
+ 
+.container__card::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+ 
+.container__card::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    border-radius: 100px;
+}
+
 .card {
     width: 100%;
-    background-color: #e8e7e6;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background-color: var(--color-card);
     padding: 1.2em;
     overflow-wrap: break-word;
     scrollbar-gutter: stable;
@@ -55,7 +76,8 @@
     margin-right: 10px;
 }
 
-.card__duedate {
+.card_detail {
+    width: 95%;
     font-size: 0.9rem;
     position: relative;
     left: 33px;
