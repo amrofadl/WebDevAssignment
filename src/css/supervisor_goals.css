@@ -280,10 +280,6 @@
     margin: 0 auto;
 }
 
-/* .form__button--create {
-    flex-grow: 2;
-} */
-
 .form__button--create {
     background-color: var(--color-submit);
     color: var(--color-white);
