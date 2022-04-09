@@ -17,15 +17,14 @@
     color: var(--color-main);
 }
 
-.container__goals-list {
-    max-height: 550px;
+.container__marksheet {
+    height: 500px;
     background-color: var(--color-white);
     padding: 1.25em;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border-radius: 8px;
-
+    border-radius: 10px;
 }
 
 .title {
@@ -36,4 +35,35 @@
     background-color: var(--color-main-lighter);
     font-size: 1.1rem;
     border-radius: 10px;
+}
+
+.table {
+    width: 100%;
+    font-size: 0.85em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table  td,
+.table th {
+    text-align: center;
+    padding: 0.65rem;
+}
+
+th {
+    background-color: var(--color-main-darker);
+    color: var(--color-white);
+}
+
+th,tr,td {
+    border: 1px solid rgb(138, 138, 138);
+}
+
+.total {
+    border: 2px solid rgb(138, 138, 138);
+    background-color: var(--color-card);
+}
+
+.total td{
+    font-weight: bold;
 }
