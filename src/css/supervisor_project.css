@@ -135,7 +135,7 @@
 /* ///////////////////////// */
 /* /// Student My Project //*/
 /* //////////////////////// */
-
+/* 
 .form__my-project {
     padding: 1rem;
 }
@@ -209,4 +209,4 @@
 .button-card:hover {
     background-color: var(--color-main-lighter);
     transform: scale(0.98);
-}
+} */
