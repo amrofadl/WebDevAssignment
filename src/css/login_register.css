@@ -59,6 +59,10 @@ form {
     color: var(--color-main);
 }
 
+.form__title--register {
+    margin-top: 0;
+}
+
 .form__message  {
     text-align: center;
     margin-bottom: 0.5rem;
