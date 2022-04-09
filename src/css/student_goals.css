@@ -19,7 +19,7 @@
 
 .container__goals-list {
     max-height: 550px;
-    background-color: var(--color-bright);
+    background-color: var(--color-white);
     padding: 1.25em;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 .title {
-    color: var(--color-bright);
+    color: var(--color-white);
     text-align: center;
     padding: 0.5em;
     font-weight: bold;
