@@ -68,7 +68,7 @@
     scrollbar-gutter: stable;
 }
 
-.card-hidden {
+.hidden {
     display: none;
 }
 

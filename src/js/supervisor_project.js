@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const proposalBtn = document.querySelector("#proposalBtn");
     const addProposalBtn = document.querySelector("#addProposalBtn");
 
-
     myProjectBtn.addEventListener("click", e =>{
         e.preventDefault();
         proposal.classList.add("hidden");

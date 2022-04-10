@@ -24,20 +24,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     upcomingBtn.addEventListener("click", e =>{
         e.preventDefault();
-        pastTable.classList.add("card-hidden");
-        createMeetingForm.classList.add("card-hidden");
+        pastTable.classList.add("hidden");
+        createMeetingForm.classList.add("hidden");
         upcomingBtn.classList.add("button-active");
-        upcomingTable.classList.remove("card-hidden");
+        upcomingTable.classList.remove("hidden");
         pastBtn.classList.remove("button-active");
         createMeetingBtn.classList.remove("button-add--active");
     });
 
     pastBtn.addEventListener("click", e =>{
         e.preventDefault();
-        upcomingTable.classList.add("card-hidden");
-        createMeetingForm.classList.add("card-hidden");
+        upcomingTable.classList.add("hidden");
+        createMeetingForm.classList.add("hidden");
         pastBtn.classList.add("button-active");
-        pastTable.classList.remove("card-hidden");
+        pastTable.classList.remove("hidden");
         upcomingBtn.classList.remove("button-active");
         createMeetingBtn.classList.remove("button-add--active");
     });
@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     createMeetingBtn.addEventListener("click", e => {
         e.preventDefault();
-        upcomingTable.classList.add("card-hidden");
-        pastTable.classList.add("card-hidden");
+        upcomingTable.classList.add("hidden");
+        pastTable.classList.add("hidden");
         createMeetingBtn.classList.add("button-add--active");
-        createMeetingForm.classList.remove("card-hidden");
+        createMeetingForm.classList.remove("hidden");
         upcomingBtn.classList.remove("button-active");
         pastBtn.classList.remove("button-active");
     });

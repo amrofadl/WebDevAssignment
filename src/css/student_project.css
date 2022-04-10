@@ -58,19 +58,62 @@
     border: 1px solid var(--color-main-darker);
 }
 
+.button-add--active {
+    border: 2px solid var(--color-main-darker);
+    background-color: var(--color-main-lighter);
+    transform: scale(0.96);
+}
+
 .content-title {
     color: var(--color-main);
 }
 
 .card {
-    width: 100%;
-    min-width: 450px;
+    padding: 1.2em;
     background-color: var(--color-white);
     border-radius: 15px;
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.card-hidden {
+.title {
+    width: 100%;
+    color: var(--color-white);
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+    background-color: var(--color-main-lighter);
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.card__my-project {
+    /* font-weight: 600; */
+}
+
+.container__details {
+    font-size: 1rem;
+    line-height: 1.6em;
+}
+
+.details__output {
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.hidden {
     display: none;
+}
+
+.message {
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
 }
 
 .table {
@@ -92,97 +135,185 @@
 }
 
 .table  td,
-.table th {
+.table tr , .table th {
     text-align: left;
     padding: 0.65rem;
+    border-bottom: 1px solid var(--color-main-lighter);
 }
+
+.table th {
+    background-color: var(--color-card);
+}
+
 
 
 /* ///////////////////////// */
-/* /// Student My Project //*/
+/* /// Student Proposal //*/
 /* //////////////////////// */
 
-.form__my-project {
-    padding: 1rem;
-}
 
-.form__my-project h2{
-    margin-bottom: 0.6rem;
-}
-
-.project-info {
-    margin-top: 0.4rem;
-    font-size: 0.9rem;
-}
-
-.project-info p{
-    margin-top: 0.2rem;
-}
-
-.wrapper__file-upload {
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-}
-
-.wrapper__file-upload p{
-    margin-bottom: 0.2rem;
-    display: inline-flex;
-}
-
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-
-.inputfile + label {
-    padding: 0.25em 0.5em;
+.status {
+    padding: 0.4em;
+    background-color: var(--color-pending-bg);
+    color: #000;
+    font-weight: 600;
     border-radius: 5px;
-    font-weight: 500;
-    color: white;
-    background-color: var(--color-main-lighter);
-    display: inline-block;
 }
 
-.inputfile:focus + label,
-.inputfile + label:hover {
-    background-color: var(--color-main-darker);
+.status-pending {
+    background-color: var(--color-pending-bg);
+    color: #000;
+}
+.status-accepted {
+    background-color: var(--color-accepted-bg);
+    color: var(--color-accepted);
 }
 
-.inputfile + label {
-	cursor: pointer;
+.status-rejected {
+    background-color: var(--color-rejected-bg);
+    color: var(--color-rejected);
 }
 
-.inputfile:focus + label {
-	outline: 1px dotted #000;
-	outline: -webkit-focus-ring-color auto 5px;
+.form {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
-.wrapper__button-card {
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input-label{
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+    left: 10px;
+}
+
+.form__input-group i {
+    position: absolute;
+}
+
+.form__input-icon {
+    margin-left: 0.2rem;
+    padding: 13px 0.7em 0.5em;
+    color: var(--color-main);
+    min-width: 50px;
+    text-align: center;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    padding-left: 50px;
+    border-radius: 30px;
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-main);
+    outline: none;
+    transition: background 0.2s;
+}
+
+.form__textarea {
+    position: relative;
+    left: -5px;
+    width: 80%;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-main);
+    outline: none;
+    transition: background 0.2s;
+    resize: none;
+}
+
+.textarea-icon {
+    position: relative !important;
+    top: -154px;
+}
+
+.form__input:focus {
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    background-color: var(--color-white);
+}
+
+.form__textarea:focus {
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
+    background-color: var(--color-white);
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.container__button {
     display: flex;
-    justify-content: flex-end;
-    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.button-card--upload {
+.form__button {
+    width: 60%;
+    padding: 0.7em 1.2em;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: var(--color-white);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-main);
+    margin: 0 auto;
+}
+
+.form__button--submit {
     background-color: var(--color-submit);
     color: var(--color-white);
 }
 
-.button-card--remove {
-    background-color: var(--color-error);
-    color: var(--color-white);
+.form__button--clear {
+    background-color: var(--color-rejected-bg);
+    color: var(--color-rejected);
 }
 
-.button-card--upload:hover {
+.form__button--submit:hover {
     background-color: var(--color-main-lighter);
+}
+
+.form__button--clear:hover {
+    background-color: var(--color-rejected);
+    color: var(--color-rejected-bg);
+}
+
+
+.form__button:active {
     transform: scale(0.98);
 }
 
-.button-card--remove:hover {
-    background-color: var(--color-error-darker);
-    transform: scale(0.98);
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-main);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
 }

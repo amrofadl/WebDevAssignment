@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     upcomingBtn.addEventListener("click", e =>{
         e.preventDefault();
-        pastCard.classList.add("card-hidden");
+        pastCard.classList.add("hidden");
         upcomingBtn.classList.add("button-active");
-        upcomingCard.classList.remove("card-hidden");
+        upcomingCard.classList.remove("hidden");
         pastBtn.classList.remove("button-active");
     });
 
     pastBtn.addEventListener("click", e =>{
         e.preventDefault();
-        pastCard.classList.remove("card-hidden");
+        pastCard.classList.remove("hidden");
         upcomingBtn.classList.remove("button-active");
-        upcomingCard.classList.add("card-hidden");
+        upcomingCard.classList.add("hidden");
         pastBtn.classList.add("button-active");
     });
 });
