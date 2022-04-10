@@ -47,6 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
         setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
 
+    registerForm.addEventListener("submit", e=> {
+
+    });
+
     document.querySelectorAll(".form__input").forEach(inputText => {
         let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         inputText.addEventListener("blur", e => {

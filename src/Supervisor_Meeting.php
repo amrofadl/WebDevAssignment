@@ -30,7 +30,7 @@
                 </ul>
             </div>
             <div class="wrapper__sign-out">
-                <a id="signout" href="Login_Register.php">Sign Out</a>
+                <a id="signout" href="login.php">Sign Out</a>
             </div>
         </div>
     </div>
