@@ -56,34 +56,26 @@
             <hr>
             
             <div id="upcomingTable" class="card card__upcoming">
+                <h3 class="title">Upcoming Meeting</h3>
                 <div>
                     <table class="table table-upcoming">
-                        <caption>Upcoming Meeting</caption>
                         <thead>
                             <tr>
-                                <th></th>
                                 <th>Title</th>
                                 <th>Date</th>
                                 <th>Time</th>
                                 <th>Location</th>
-                                <th>Participants</th>
-                                <th></th>
+                                <th>Student</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td class="table-checkbox">
-                                    <input type="checkbox" id="" name="index[]" value="">
-                                </td>
                                 <td>Meeting</td>
                                 <td>May 1, 2022</td>
-                                <td>Meeting Room</td>
+                                <td>1:00 PM</td>
+                                <td>Hall</td>
                                 <td>Albert Lim</td>
-                                <td>
-                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-pencil"></i></span></button>
-                                    <button class="table-edit-button" type="button"><span class="table-edit-icon"><i class="fa-solid fa-trash-can"></i></span></button>
-                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -91,9 +83,9 @@
             </div>
 
             <div id="pastTable" class="card card__past hidden">
+                <h3 class="title">Past Meeting</h3>
                 <div>
                     <table class="table table-past">
-                        <caption>Past Meeting</caption>
                         <thead>
                             <tr>
                                 <th>Title</th>
