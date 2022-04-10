@@ -1,10 +1,12 @@
-
-<div class="nav-bar">
+<div id="nav-bar">
     <div class="nav-bar__user-div">
         <div>
             <img class="" src="./images/User.png" alt="User Icon">
         </div>
         <div id="userType">UserType - Student</div>
+        <div id="container__close" class="container__close">
+            <button id="close-nav"><i class="fa-solid fa-xmark fa-lg"></i></button>
+         </div>
     </div>
     <div class="wrapper__page-button">
         <div class="nav-bar__page-list">

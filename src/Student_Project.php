@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/student_project.css">
+    <link rel="stylesheet" href="./css/hamburger.css" type="text/css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
     <script src="./js/student_project.js"></script>
     <script src="./js/nav-bar.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/hamburger.js"></script>
     <title>Project</title>
 </head>
 <body>
     <?php include 'includes/../php/student_nav-bar.inc.php'; ?>
+    <?php include 'includes/../php/hamburger.inc.php'; ?>
 
 
     <div class="container__content">

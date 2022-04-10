@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/supervisor_goals.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
     <script src="./js/supervisor_goals.js"></script>
     <script src="./js/nav-bar.js"></script>
+    <script src="./js/hamburger.js"></script>
     <title>Goals</title>
 </head>
 <body>
     <?php include 'includes/../php/supervisor_nav-bar.inc.php'; ?>    
+    <?php include 'includes/../php/hamburger.inc.php'; ?>
 
     <div id="goalsContainer" class="container__content">
         <div class="container__goals">

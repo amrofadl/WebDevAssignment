@@ -1,4 +1,4 @@
-.nav-bar {
+#nav-bar {
     background-color: var(--color-main);
     color: var(--color-white);
     width: 270px;

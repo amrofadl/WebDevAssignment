@@ -1,6 +1,3 @@
-body {
-    /* display: flex; */
-}
 
 .container__content {
     margin-left: 300px;
@@ -45,6 +42,7 @@ h1, h2 {
 .card-left {
     flex: 1 0 auto;
     width: 280px;
+    min-width: 320px;
 }
 
 .card-right {

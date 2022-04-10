@@ -79,6 +79,6 @@
 .card_detail {
     width: 95%;
     font-size: 0.9rem;
-    position: relative;
-    left: 33px;
+    /* position: relative;
+    left: 33px; */
 }
