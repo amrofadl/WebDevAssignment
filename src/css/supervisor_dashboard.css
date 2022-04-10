@@ -27,13 +27,42 @@ h1, h2 {
     flex-wrap: wrap;
 }
 
+.container__table {
+    height: 420px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+
 .card {
     background-color: var(--color-white);
-    flex: 1 0 auto;
-    width: 200px;
-    height: 500px;
     padding: 1em;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-left {
+    flex: 1 0 auto;
+    min-width: 300px;
+}
+
+.card-right {
+    flex: 2 0 auto;
+}
+
+.container__table::-webkit-scrollbar {
+    width: 0.3rem;
+}
+ 
+.container__table::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+ 
+.container__table::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    border-radius: 100px;
 }
 
 .card__title {
@@ -46,10 +75,6 @@ h1, h2 {
     border-radius: 10px;
 }
 
-.container__{
-    padding: 4rem;
-}
-
 .table {
     width: 100%;
     font-size: 0.85em;
@@ -57,8 +82,14 @@ h1, h2 {
     border-spacing: 0;
 }
 
+
 .table  td,
-.table th {
+.table tr , .table th {
     text-align: left;
     padding: 0.65rem;
+    border-bottom: 1px solid var(--color-main-lighter);
+}
+
+.table th {
+    background-color: var(--color-card);
 }

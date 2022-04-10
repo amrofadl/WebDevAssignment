@@ -40,11 +40,27 @@
             <h1>Dashboard</h1>
             <hr>
             <div class="container__card">
-                <div class="card">
+                <div class="card card-left">
                     <h2 class="card__title">Projects</h2>
-                    <!--  -->
+                    <div class="container__table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Student</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Project X</td>
+                                    <td>Sam smith</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="card">
+                <div class="card card-right">
                     <h2 class="card__title">Upcoming Meetings</h2>
                     <div class="container__table">
                         <table class="table table-upcoming">
@@ -54,7 +70,7 @@
                                     <th>Date</th>
                                     <th>Time</th>
                                     <th>Location</th>
-                                    <th>Participants</th>
+                                    <th>Students</th>
                                 </tr>
                             </thead>
 
@@ -62,6 +78,94 @@
                                 <tr>
                                     <td>Meeting</td>
                                     <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
                                     <td>Meeting Room</td>
                                     <td>Albert Lim</td>
                                 </tr>

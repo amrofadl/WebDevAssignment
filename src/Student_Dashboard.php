@@ -41,7 +41,7 @@
             <h1>Dashboard</h1>
             <hr>
             <div class="container__card">
-                <div class="card">
+                <div class="card card-left">
                     <h2 class="card__title">My Projects</h2>
                     <div class="container__table">
                         <table class="table">
@@ -62,9 +62,43 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card card-right">
                     <h2 class="card__title">Upcoming Meetings</h2>
-                    <!--  -->
+                    <div class="container__table">
+                        <table class="table table-upcoming">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>11:00AM</td>
+                                    <td>Meeting Room</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 7, 2022</td>
+                                    <td>10:00AM</td>
+                                    <td>Meeting Room</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 6, 2022</td>
+                                    <td>12:00AM</td>
+                                    <td>FCI001</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             
