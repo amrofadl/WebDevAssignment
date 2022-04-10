@@ -77,10 +77,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    justify-content: center; */
     gap: 1rem;
 }
+
 .title {
     width: 100%;
     color: var(--color-white);
@@ -136,10 +135,16 @@
 }
 
 .table  td,
-.table th {
+.table tr , .table th {
     text-align: left;
     padding: 0.65rem;
+    border-bottom: 1px solid var(--color-main-lighter);
 }
+
+.table th {
+    background-color: var(--color-card);
+}
+
 
 
 /* ///////////////////////// */
@@ -219,6 +224,7 @@
     border: 1px solid var(--color-main);
     outline: none;
     transition: background 0.2s;
+    resize: none;
 }
 
 .textarea-icon {

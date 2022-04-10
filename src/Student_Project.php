@@ -70,7 +70,6 @@
                 </div>
             </div>
 
-            <!-- TODO: form? table? -->
             <div id="proposal" class="card card__proposal hidden">
                 <h2 class="title">Proposal Status</h2>
                 <div class="container__proposal">
