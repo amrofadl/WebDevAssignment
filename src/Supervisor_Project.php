@@ -62,7 +62,7 @@
                         <tr>
                             <th>Project Title</th>
                             <th>Student</th>
-                            <th>Proposal File</th>
+                            <th>Project File</th>
                             <th>Published Date</th>
                         </tr>
                     </thead>
@@ -70,7 +70,7 @@
                         <tr>
                             <td>Project FYP 2</td>
                             <td>Oliver</td>
-                            <td><a href="">Project_Proposal.pdf</a></td>
+                            <td><a href="">Project.pdf</a></td>
                             <td>May 1, 2022</td>
                         </tr>
                     </tbody>
