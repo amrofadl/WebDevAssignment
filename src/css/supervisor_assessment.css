@@ -41,6 +41,7 @@
 
 .container__student-table {
     width: 230px;
+    min-width: 290px;
     padding: 0.8em;
     background-color: var(--color-white);
     border-radius: 15px;

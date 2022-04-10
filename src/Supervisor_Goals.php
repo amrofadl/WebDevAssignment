@@ -7,33 +7,16 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/supervisor_goals.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
     <script src="./js/supervisor_goals.js"></script>
+    <script src="./js/nav-bar.js"></script>
+    <script src="./js/hamburger.js"></script>
     <title>Goals</title>
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="nav-bar__user-div">
-            <div>
-                <img class="" src="./images/User.png" alt="User Icon">
-            </div>
-            <div id="userType">UserType - Supervisor</div>
-        </div>
-        <div class="wrapper__page-button">
-            <div class="nav-bar__page-list">
-                <ul id="myDiv">
-                    <li><a class="page-button" href="./Supervisor_Dashboard.php"><span class="page-icon"><i class="fa-brands fa-trello"></i></span>Dashboard</a></li>
-                    <li><a class="page-button" href="./Supervisor_Project.php"><span class="page-icon"><i class="fa-solid fa-briefcase"></i></span>Projects</a></li>
-                    <li><a class="page-button" href="./Supervisor_Meeting.php"><span class="page-icon"><i class="fa-solid fa-calendar-days"></i></span>Meetings</a></li>
-                    <li><a class="page-button active" href="./Supervisor_Goals.php"><span class="page-icon"><i class="fa-solid fa-bullseye"></i></span>Goals</a></li>
-                    <li><a class="page-button" href="./Supervisor_Assessment.php"><span class="page-icon"><i class="fa-solid fa-clipboard-list"></i></span>Assessment</a></li>
-                </ul>
-            </div>
-            <div class="wrapper__sign-out">
-                <a id="signout" href="login.php">Sign Out</a>
-            </div>
-        </div>
-    </div>
+    <?php include 'includes/../php/supervisor_nav-bar.inc.php'; ?>    
+    <?php include 'includes/../php/hamburger.inc.php'; ?>
 
     <div id="goalsContainer" class="container__content">
         <div class="container__goals">
