@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/login_register.css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/login_register.js"></script>
     <title>FYP Management System</title>
 </head>
@@ -20,32 +21,7 @@
     </header>
 
     <div class="container__form">
-        <form action="./php/login.php" class="form"  id="login" method="post">
-            <h1>Welcome!</h1>
-            <h3 class="form__title">Sign in to continue</h3>
-            <div class="form__message form__message--error"><!--Incorrect username/password combination --></div>
-            <div class="form__input-group">
-                <i class="fa-solid fa-envelope form__input-icon"></i>
-                <input type="text" id="signinEmail" class="form__input" autofocus placeholder="Email Address">
-                <div class="form__input-error-message"></div>
-            </div>
-
-            <div class="form__input-group">
-                <i class="fa-solid fa-unlock-keyhole form__input-icon"></i>
-                <input type="password" id="signinPassword" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"><!--This is an error message --></div>
-            </div>
-            <div class="container__button">
-                <button class="form__button" type="submit">Sign In</button>
-            </div>
-
-            <p class="form__text">
-                Don't have an account? 
-                <a id="linkRegister" class="form__link" href="">Sign Up</a>
-            </p>
-        </form>
-
-        <form action="./php/register.php" class="form form--hidden"  id="register" method="post">
+        <form class="form"  id="register" method="POST">
             <h3 class="form__title">Sign Up</h3>
             <div class="form__message form__message--error"><!--Incorrect username/password combination --></div>
             
@@ -67,14 +43,15 @@
                 <div class="form__input-error-message"><!--This is an error message --></div>
             </div>
             <div class="container__button">
-                <button class="form__button" type="submit">Sign Up</button>
+                <button class="form__button" type="submit" value="signup">Sign Up</button>
             </div>
 
             <p class="form__text">
                 Already have an account? 
-                <a id="linkLogIn" class="form__link" href="">Sign In</a>
+                <a class="form__link" href="login.php">Sign In</a>
             </p>
         </form>
     </div>
+    <script src="js/register.js"></script>
 </body>
 </html>
