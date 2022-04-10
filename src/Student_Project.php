@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-
+            <hr>
             <div id="proposalTableStud" class="card card__proposal-card">
                 <table class="table table--proposal">
                     <thead>
@@ -61,16 +61,40 @@
                         <tr>
                             <th>Project Title</th>
                             <th>Owner</th>
-                            <th>Proposal</th>
+                            <th>Proposal File</th>
                             <th>Published Date</th>
+                            <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Test</td>
+                            <td>Project A</td>
                             <td>Text</td>
                             <td><a href="">Project_Proposal.pdf</a></td>
                             <td>May 1, 2022</td>
+                            <td>
+                                <span class="status status-pending">Pending</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Project B</td>
+                            <td>Text</td>
+                            <td><a href="">Project_Proposal.pdf</a></td>
+                            <td>May 1, 2022</td>
+                            <td>
+                                <span class="status status-rejected">Rejected</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Project C</td>
+                            <td>Text</td>
+                            <td><a href="">Project_Proposal.pdf</a></td>
+                            <td>May 1, 2022</td>
+                            <td>
+                                <span class="status status-accepted">Accepted</span>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

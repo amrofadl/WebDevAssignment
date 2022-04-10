@@ -60,8 +60,8 @@
                         <caption>Proposals</caption>
                         <tr>
                             <th>Project Title</th>
-                            <th>Owner</th>
-                            <th>Proposal</th>
+                            <th>Student</th>
+                            <th>Proposal File</th>
                             <th>Published Date</th>
                         </tr>
                     </thead>
