@@ -44,7 +44,7 @@ h1, h2 {
 
 .card-left {
     flex: 1 0 auto;
-    min-width: 300px;
+    width: 280px;
 }
 
 .card-right {
