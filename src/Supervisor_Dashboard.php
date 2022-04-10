@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
-    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/supervisor_dashboard.css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
     <script src="./js/nav-bar.js"></script>
     <title>Dashboard</title>
@@ -41,12 +41,33 @@
             <hr>
             <div class="container__card">
                 <div class="card">
-                    <h2 class="card__title">PROJECTS</h2>
+                    <h2 class="card__title">Projects</h2>
                     <!--  -->
                 </div>
                 <div class="card">
-                    <h2 class="card__title">UPCOMING MEETINGS</h2>
-                    <!--  -->
+                    <h2 class="card__title">Upcoming Meetings</h2>
+                    <div class="container__table">
+                        <table class="table table-upcoming">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Location</th>
+                                    <th>Participants</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Meeting</td>
+                                    <td>May 1, 2022</td>
+                                    <td>Meeting Room</td>
+                                    <td>Albert Lim</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             

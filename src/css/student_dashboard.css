@@ -45,3 +45,20 @@ h1, h2 {
     font-size: 1.2em;
     border-radius: 10px;
 }
+
+.container__table {
+    padding: 4rem;
+}
+
+.table {
+    width: 100%;
+    font-size: 0.85em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table  td,
+.table th {
+    text-align: left;
+    padding: 0.65rem;
+}
