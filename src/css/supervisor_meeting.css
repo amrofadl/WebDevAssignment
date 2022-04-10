@@ -74,7 +74,7 @@
     border-radius: 15px;
 }
 
-.card-hidden {
+.hidden {
     display: none;
 }
 
@@ -238,10 +238,6 @@
     background-color: var(--color-main);
     margin: 0 auto;
 }
-
-/* .form__button--create {
-    flex-grow: 2;
-} */
 
 .form__button--create {
     background-color: var(--color-submit);

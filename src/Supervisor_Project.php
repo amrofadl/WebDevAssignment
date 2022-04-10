@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/supervisor_project.css">
     <script src="https://kit.fontawesome.com/3d7a902bb5.js" crossorigin="anonymous"></script>
-    <script src="./js/project.js"></script>
+    <script src="./js/supervisor_project.js"></script>
     <title>Project</title>
 </head>
 <body>
@@ -77,7 +77,7 @@
             </div>
 
             <!-- TODO: form? or no -->
-            <div id="projStatusTable" class="card card__project-status card-hidden">
+            <div id="projStatusTable" class="card card__project-status hidden">
                 <div>
                     <table class="table project-status--table">
                         <caption>Project Status</caption>

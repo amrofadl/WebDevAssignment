@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div id="pastTable" class="card card__past card-hidden">
+            <div id="pastTable" class="card card__past hidden">
                 <div>
                     <table class="table table-past">
                         <caption>Past Meeting</caption>
@@ -119,7 +119,7 @@
                 </div>
             </div>
 
-            <div id="createMeeting" class="card card__create-meeting card-hidden">
+            <div id="createMeeting" class="card card__create-meeting hidden">
                 <form  action="" method="post" class="form form__create--meeting ">
                     <h3 class="form__title">Create a Meeting</h3>
                     <!-- <div class="form__message form__message--error">Incorrect username/password combination</div> -->

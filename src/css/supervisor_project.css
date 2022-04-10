@@ -68,7 +68,7 @@
     border-radius: 15px;
 }
 
-.card-hidden {
+.hidden {
     display: none;
 }
 
@@ -132,11 +132,9 @@
     cursor: pointer;
 }
 
-/* ///////////////////////// */
-/* /// Student My Project //*/
-/* //////////////////////// */
-/* 
-.form__my-project {
+
+
+/* .form__my-project {
     padding: 1rem;
 }
 

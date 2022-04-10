@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <div id="pastCard" class="container__card card-hidden">
+            <div id="pastCard" class="container__card hidden">
                 <div class="card ">
                     <div>
                         <h3 class="card__title"><i class="fa-solid fa-square-pen card__icon"></i>Meeting A</h3>

@@ -7,17 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     proposalBtn.addEventListener("click", e =>{
         e.preventDefault();
-        projStatusTable.classList.add("card-hidden");
+        projStatusTable.classList.add("hidden");
         proposalBtn.classList.add("button-active");
-        proposalTable.classList.remove("card-hidden");
+        proposalTable.classList.remove("hidden");
         projStatusBtn.classList.remove("button-active");
     });
 
     projStatusBtn.addEventListener("click", e =>{
         e.preventDefault();
-        projStatusTable.classList.remove("card-hidden");
+        projStatusTable.classList.remove("hidden");
         proposalBtn.classList.remove("button-active");
-        proposalTable.classList.add("card-hidden");
+        proposalTable.classList.add("hidden");
         projStatusBtn.classList.add("button-active");
     });
 });
