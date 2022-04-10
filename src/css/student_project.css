@@ -35,7 +35,16 @@
     font-weight: 600;
 }
 
-/* .button-add  */
+.wrapper__button-card {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-card--upload {
+    background-color: var(--color-submit);
+    color: var(--color-white);
+}
+
 .icon {
     margin-right: 10px;
 }
@@ -99,6 +108,8 @@
     font-size: 1rem;
     line-height: 1.6em;
 }
+
+.details {}
 
 .details__output {
     font-weight: 600;
