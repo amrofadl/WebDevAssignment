@@ -18,7 +18,7 @@ $('.form').on('submit', function() {
                 window.location.replace("Supervisor_Dashboard.php");
                 
             } else {
-                
+                window.alert("Wrong password/email.");
                 // fail to log in
             }
         }

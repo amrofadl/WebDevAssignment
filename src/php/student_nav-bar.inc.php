@@ -3,7 +3,10 @@
         <div>
             <img class="" src="./images/User.png" alt="User Icon">
         </div>
-        <div id="userType">UserType - Student</div>
+        <div id="userType"><?php
+            session_start();
+            echo($_SESSION['username']);
+            ?></div>
         <div id="container__close" class="container__close">
             <button id="close-nav"><i class="fa-solid fa-xmark fa-lg"></i></button>
          </div>
