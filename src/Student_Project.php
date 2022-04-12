@@ -1,3 +1,4 @@
+<?php include '/xampp/htdocs/webdevAssignment/WebDevAssignment/src/php/filesLogic.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +97,7 @@
 
             <div id="addProposal" class="card card__add-proposal hidden">
                 <h3 class="title form__title">Add Proposal</h3>
-                <form  action="" method="post" class="form form__proposal">
+                <form  action="Student_Project.php" method="post" enctype="multipart/form-data" class="form form__proposal">
                     <!-- <div class="form__message form__message--error">Incorrect username/password combination</div> -->
 
                     <div class="form__input-group">
@@ -117,7 +118,7 @@
                     <div class="">
                         <label class="form__input-label" for="file">File Upload</label><br>
                         <i class="fa-solid fa-clock form__input-icon"></i>
-                        <input type="file" id="file" class="" autofocus>
+                        <input type="file" id="file" class="" name="myfile" autofocus>
                         <div class="form__input-error-message"></div>
                     </div>
 
@@ -131,7 +132,7 @@
                     </div>
 
                     <div class="container__button">
-                        <button class="form__button form__button--submit" type="submit"><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>Submit</button>
+                        <button class="form__button form__button--submit" type="submit" name="save"><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>Submit</button>
                         <button class="form__button form__button--clear" type="reset" value="Clear Form"><span class="icon"><i class="fa-solid fa-delete-left"></i></span>Clear</button>
                     </div>
                 </form>
