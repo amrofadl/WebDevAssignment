@@ -172,6 +172,7 @@
                             Save
                         </button>
                     </div>
+                </div>
             </div>
 
             <div id="addGoals" class="content__goals--add hidden">

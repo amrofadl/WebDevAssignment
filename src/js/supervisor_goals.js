@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         addGoals.classList.remove("hidden");
         goalsBtn.classList.remove("button-active");
         goalsList.classList.add("hidden");
-        addGoalsBtn.classList.add("button-active");
+        addGoalsBtn.classList.add("button-add--active");
     });
 
 
