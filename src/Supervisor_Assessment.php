@@ -36,22 +36,7 @@
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>Sam</td>
-                                <td>0</td>
-                                <td>
-                                    <button class="table-edit-button" type="button"><span class="icon"><i class="fa-solid fa-eye"></i></span>View</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Oak</td>
-                                <td>29</td>
-                                <td>
-                                    <button class="table-edit-button" type="button"><span class="icon"><i class="fa-solid fa-eye"></i></span>View</button>
-                                </td>
-                            </tr>
-
+                            <?php require_once './php/supervisor_assessment.php' ?>
                         </tbody>
                     </table>
                 </div>
