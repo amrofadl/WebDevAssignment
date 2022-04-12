@@ -36,7 +36,10 @@
                     <div>
                         <h3 class="goals-list__header">Goals List</h3>
                     </div>
-                    <?php require_once './php/supervisor_goals_display.php' ?>
+                    <div class="container__card--goals">
+                        <?php require_once './php/supervisor_goals_display.php' ?>
+                    </div>
+                    
                 </div>
 
                 <div class="container__progress">
