@@ -36,22 +36,7 @@
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>Sam</td>
-                                <td>0</td>
-                                <td>
-                                    <button class="table-edit-button" type="button"><span class="icon"><i class="fa-solid fa-eye"></i></span>View</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Oak</td>
-                                <td>29</td>
-                                <td>
-                                    <button class="table-edit-button" type="button"><span class="icon"><i class="fa-solid fa-eye"></i></span>View</button>
-                                </td>
-                            </tr>
-
+                            <?php require_once './php/supervisor_assessment.php' ?>
                         </tbody>
                     </table>
                 </div>
@@ -64,7 +49,7 @@
                             <h3 class="-title">Details</h3>
                             <hr>
                             <p>Name: 
-                                <span>Sam Willy</span>
+                                <span>Euwern</span>
                             </p>
                             <p>Project Title: 
                                 <span>XXXXXS</span>
@@ -91,7 +76,7 @@
                                     <tr>
                                         <td>Narrative and Flow Charts or Pseudocode</td>
                                         <td>
-                                            <input class="mark" type="number" value="12" min="0" max="25" disabled>
+                                            <input class="mark" type="number" value="0" min="0" max="25" disabled>
                                         </td>
                                     </tr>
                                     <tr>
