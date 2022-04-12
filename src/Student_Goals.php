@@ -25,53 +25,7 @@
             <div class="container__goals-list">
                 <h3 class="title">Goals List</h3>
                 <div class="container__card">
-                    <div class="card">
-                        <div>
-                            <h3 class="card__title"><i class="fa-solid fa-bullseye card__icon"></i>Goal Title</h3>
-                        </div>
-                        <p class="card_detail">Descriptionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
-                        <p class="card_detail card__duedate">Deadline/Duedate</p>
-                    </div>
-
-                    <div class="card">
-                        <div>
-                            <h3 class="card__title"><i class="fa-solid fa-bullseye card__icon"></i>Goal Title A</h3>
-                        </div>
-                        <p class="card_detail">Descriptionnnnnnnnnnnn</p>
-                        <p class="card_detail card__duedate">Deadline/Duedate</p>
-                    </div>
-
-                    <div class="card">
-                        <div>
-                            <h3 class="card__title"><i class="fa-solid fa-bullseye card__icon"></i>Goal Title B</h3>
-                        </div>
-                        <p class="card_detail">Descriptionnnnnnnnnnnn</p>
-                        <p class="card_detail card__duedate">Deadline/Duedate</p>
-                    </div>
-
-                    <div class="card">
-                        <div>
-                            <h3 class="card__title"><i class="fa-solid fa-bullseye card__icon"></i>Goal Title C</h3>
-                        </div>
-                        <p class="card_detail">Descriptionnnnnnnnnnnn</p>
-                        <p class="card_detail card__duedate">Deadline/Duedate</p>
-                    </div>
-
-                    <div class="card">
-                        <div>
-                            <h3 class="card__title"><i class="fa-solid fa-bullseye card__icon"></i>Goal Title D</h3>
-                        </div>
-                        <p class="card_detail">Descriptionnnnnnnnnnnn</p>
-                        <p class="card_detail card__duedate">Deadline/Duedate</p>
-                    </div>
-
-                    <div class="card">
-                        <div>
-                            <h3 class="card__title"><i class="fa-solid fa-bullseye card__icon"></i>Goal Title E</h3>
-                        </div>
-                        <p class="card_detail">Descriptionnnnnnnnnnnn</p>
-                        <p class="card_detail card__duedate">Deadline/Duedate</p>
-                    </div>
+                    <?php require_once './php/student_goals_display.php' ?>
                 </div>
             </div>
         </div>
