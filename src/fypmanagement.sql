@@ -3,7 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+
 -- Generation Time: Apr 12, 2022 at 08:13 AM
+
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -40,9 +42,11 @@ CREATE TABLE `assessment` (
 --
 
 INSERT INTO `assessment` (`student_id`, `criteriaA`, `criteriaB`, `criteriaC`, `criteriaD`) VALUES
+
 (1, 0, 0, 0, 0),
 (8, 0, 0, 0, 0),
 (7, 0, 0, 0, 0);
+
 
 -- --------------------------------------------------------
 

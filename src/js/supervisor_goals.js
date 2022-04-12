@@ -37,6 +37,35 @@ document.addEventListener("DOMContentLoaded", () => {
         goalsBtn.classList.remove("button-active");
         goalsList.classList.add("hidden");
         addGoalsBtn.classList.add("button-add--active");
+
+    });
+
+
+    const progress = document.querySelectorAll(".progress");
+
+    progress.forEach(element => {
+        element.addEventListener("change", function() {
+            let v = parseInt(this.value);
+            if (v < 0) this.value = 0;
+            if (v > 100) this.value = 100;
+        });
+      }); 
+
+    const setProgressBtn = document.querySelector("#set-progress");
+    const progressBar = document.querySelectorAll("progress");
+
+    for (let i=0; i < progress.length; i++) {
+        const pbValue = progressBar[i].getAttribute("value");
+        progress[i].setAttribute("placeholder", pbValue);  
+    }
+
+    setProgressBtn.addEventListener("click", function() {
+        for (let i=0; i < progressBar.length; i++) {
+
+            const val = progress[i].value;
+            // alert(val);
+            progressBar[i].setAttribute("value", val.toString());
+        }
     });
 
 
