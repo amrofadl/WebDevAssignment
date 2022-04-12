@@ -3,7 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2022 at 06:47 AM
+
+-- Generation Time: Apr 12, 2022 at 08:13 AM
+
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -40,7 +42,11 @@ CREATE TABLE `assessment` (
 --
 
 INSERT INTO `assessment` (`student_id`, `criteriaA`, `criteriaB`, `criteriaC`, `criteriaD`) VALUES
-(1, 0, 0, 0, 0);
+
+(1, 0, 0, 0, 0),
+(8, 0, 0, 0, 0),
+(7, 0, 0, 0, 0);
+
 
 -- --------------------------------------------------------
 
@@ -103,7 +109,8 @@ CREATE TABLE `student` (
 
 INSERT INTO `student` (`student_id`, `username`, `email_address`, `password`) VALUES
 (1, 'Euwern', 'euwernyongcj@gmail.com', '123456'),
-(7, 'Testing', 'testing11234@gmail.com', '123456');
+(7, 'Testing', 'testing11234@gmail.com', '123456'),
+(8, 'Test', 'test@gmail.com', '123456');
 
 -- --------------------------------------------------------
 
@@ -169,7 +176,7 @@ ALTER TABLE `supervisor`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `student_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `supervisor`
