@@ -119,39 +119,59 @@
                 </div>
 
                 <div class="container__progress">
-                    <table class="table">
-                        <caption>Progress</caption>
-                        <thead>
-                            <tr>
-                                <th>Student</th>
-                                <th>Progress</th>
-                            </tr>
-                        </thead>
+                    <h2 class="title">Student Progress</h2>
+                    <div class="container__table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Student</th>
+                                    <th>Progress</th>
+                                    <th>Set Progress</th>
+                                </tr>
+                            </thead>
 
-                        <tbody>
-                            <tr>
-                                <td>Albert Lim</td>
-                                <td>
-                                    <progress max="100" value="100"></progress>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>Albert Lim</td>
+                                    <td>
+                                        <progress class="progress-bar" id="progress1" max="100" value="90"></progress>
+                                    </td>
+                                    <td>
+                                        <input class="progress" type="number" min="0" max="100" name="">
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <td>Chris Rock</td>
-                                <td>
-                                    <progress max="100" value="20"></progress>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>Chris Rock</td>
+                                    <td>
+                                        <progress class="progress-bar" max="100" value="25"></progress>
+                                    </td>
+                                    <td>
+                                        <input class="progress" type="number" min="0" max="100" name="" id="" >
+                                    </td>
+                                    <td>
+                                </tr>
 
-                            <tr>
-                                <td>CWK</td>
-                                <td>
-                                    <progress max="100" value="50"></progress>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                                <tr>
+                                    <td>CWK</td>
+                                    <td>
+                                        <progress class="progress-bar" max="100" value="55"></progress>
+                                    </td>
+                                    <td>
+                                        <input class="progress" type="number" min="0" max="100" name="" id="" >
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="container__progress-button">
+                        <button id="set-progress" class="table-edit-button">
+                            <span class="icon table-edit-icon">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            </span>
+                            Save
+                        </button>
+                    </div>
             </div>
 
             <div id="addGoals" class="content__goals--add hidden">
