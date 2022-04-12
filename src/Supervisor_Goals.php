@@ -36,7 +36,7 @@
                     <div>
                         <h3 class="goals-list__header">Goals List</h3>
                     </div>
-                    <?php require_once './php/goals_display.php' ?>
+                    <?php require_once './php/supervisor_goals_display.php' ?>
                 </div>
 
                 <div class="container__progress">
