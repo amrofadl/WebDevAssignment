@@ -6,15 +6,15 @@ function enableTxt() {
     document.querySelectorAll('input').forEach(element => element.disabled = false);
 }
 
-function getInputVal() {
-    const val = document.querySelector('input').value;
-    alert(val);
-    setProgressBar(val);
-}
+// function getInputVal() {
+//     const val = document.querySelector('input').value;
+//     alert(val);
+//     setProgressBar(val);
+// }
 
-function setProgressBar(value) {
-    document.getElementById("progress1").setAttribute("value", value.toString()); 
-  }
+// function setProgressBar(value) {
+//     document.getElementById("progress1").setAttribute("value", value.toString()); 
+//   }
 
 document.addEventListener("DOMContentLoaded", () => {
     const goalsList = document.querySelector("#goalsList");
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i=0; i < progressBar.length; i++) {
 
             const val = progress[i].value;
-            alert(val);
+            // alert(val);
             progressBar[i].setAttribute("value", val.toString());
         }
     });

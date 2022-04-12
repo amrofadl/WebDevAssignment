@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", ()=> {
         disableTxt();
     });
 
+    for (let i=0; i < markInput.length; i++) {
+      let inputValue = markInput[i].getAttribute("value");
+      markInput[i].setAttribute("placeholder", inputValue);
+    }
+
     markInput.forEach(element => {
       element.addEventListener("change", function() {
       let v = parseInt(this.value);

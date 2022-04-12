@@ -49,7 +49,7 @@
                             <h3 class="-title">Details</h3>
                             <hr>
                             <p>Name: 
-                                <span>Sam Willy</span>
+                                <span>Euwern</span>
                             </p>
                             <p>Project Title: 
                                 <span>XXXXXS</span>
@@ -76,7 +76,7 @@
                                     <tr>
                                         <td>Narrative and Flow Charts or Pseudocode</td>
                                         <td>
-                                            <input class="mark" type="number" value="12" min="0" max="25" disabled>
+                                            <input class="mark" type="number" value="0" min="0" max="25" disabled>
                                         </td>
                                     </tr>
                                     <tr>
