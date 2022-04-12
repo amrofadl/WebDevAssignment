@@ -14,14 +14,22 @@
             $_SESSION['email'] = $student['email_address'];
             $_SESSION['username'] = $student['username'];
             $_SESSION['student_id'] = $student['student_id'];
+
             $id = $student['student_id'];
 
             $student_assessment =  $link->query("SELECT * FROM assessment WHERE student_id = '$id'");
+            $student_project = $link->query("SELECT * FROM project WHERE student_id = '$id'");
 
             if ($student_assessment->num_rows == 0) {
                 $stmt = $link->query("INSERT INTO assessment(student_id, criteriaA, criteriaB, criteriaC, criteriaD) VALUES ('$id', 0, 0, 0, 0)");
             }
 
+            if ($student_project->num_rows != 0) {
+                $project = $student_project->fetch_assoc();
+                $_SESSION['project_title'] = $project['project_title'];
+            } else {
+                $_SESSION['project_title'] = "-";
+            }
             # test if the student has project linked in the project database
 
             # test end

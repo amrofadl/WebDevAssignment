@@ -30,7 +30,7 @@
                 </div>
                 <div class="details">
                     <p>Name: <?php echo $_SESSION['username']; ?></p>
-                    <p>Project Title: Something2</p> 
+                    <p>Project Title: <?php echo $projectName; ?></p> 
                 </div>
                 <div class="container__table">
                     <table class="table">
@@ -43,22 +43,22 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="criteria">Criteria A</td>
+                                <td class="criteria">Definition of Problem</td>
                                 <td>25</td>
                                 <td><?php echo $criteriaA; ?></td>
                             </tr>
                             <tr>
-                                <td class="criteria">Criteria B</td>
+                                <td class="criteria">Narrative and Flow Charts or Pseudocode</td>
                                 <td>25</td>
                                 <td><?php echo $criteriaB; ?></td>
                             </tr>
                             <tr>
-                                <td class="criteria">Criteria C</td>
+                                <td class="criteria">Coding of Program</td>
                                 <td>25</td>
                                 <td><?php echo $criteriaC; ?></td>
                             </tr>
                             <tr>
-                                <td class="criteria">Criteria D</td>
+                                <td class="criteria">Testing and Presentation</td>
                                 <td>25</td>
                                 <td><?php echo $criteriaD; ?></td>
                             </tr>
