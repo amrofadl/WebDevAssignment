@@ -30,9 +30,6 @@
             } else {
                 $_SESSION['project_title'] = "-";
             }
-            # test if the student has project linked in the project database
-
-            # test end
 
             echo "student";
         }

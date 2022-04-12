@@ -17,6 +17,7 @@
 <body>
     <?php include 'includes/../php/supervisor_nav-bar.inc.php'; ?>    
     <?php include 'includes/../php/hamburger.inc.php'; ?>
+    <?php include 'php/supervisor_goals.php'; ?>
 
     <div id="goalsContainer" class="container__content">
         <div class="container__goals">
@@ -35,87 +36,7 @@
                     <div>
                         <h3 class="goals-list__header">Goals List</h3>
                     </div>
-                    <div class="container__card--goals">
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete Introduction</h3>
-                            </div>
-                            <p class="card_detail">Descriptionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete Literature Review</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete C</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete D</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete E</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete F</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete G</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete H</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete I</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-
-                        <div class="card">
-                            <div>
-                                <h3 class="card__title"><i class="fa-solid fa-bullseye icon card__icon"></i>Complete J</h3>
-                            </div>
-                            <p class="card_detail">Description</p>
-                            <p class="card_detail card__duedate">Deadline/Duedate</p>
-                        </div>
-                    </div>
+                    <?php require_once './php/goals_display.php' ?>
                 </div>
 
                 <div class="container__progress">
@@ -155,40 +76,40 @@
             </div>
 
             <div id="addGoals" class="content__goals--add hidden">
-                <form  action="" method="post" class="form form__goals--add ">
+                <form method="POST" class="form form__goals--add ">
                     <h3 class="form__title">Add Goal</h3>
                     <!-- <div class="form__message form__message--error">Incorrect username/password combination</div> -->
 
                     <div class="form__input-group">
                         <label class="form__input-label" for="title">Title</label><br>
                         <i class="fa-solid fa-square-pen form__input-icon"></i>
-                        <input type="text" id="title" class="form__input" autofocus placeholder="Enter goal's title...">
+                        <input type="text" id="title" name="title" class="form__input" autofocus placeholder="Enter goal's title...">
                         <div class="form__input-error-message"></div>
                     </div>
 
                     <div class="form__input-group">
                         <label class="form__input-label" for="description">Description</label><br>
                         <i class="fa-solid fa-file-lines form__input-icon"></i>
-                        <input type="textarea" id="description" class="form__input" autofocus placeholder="Enter goal's description...">
+                        <input type="textarea" id="description" name="description" class="form__input" autofocus placeholder="Enter goal's description...">
                         <div class="form__input-error-message"><!--This is an error message --></div>
                     </div>
                     
                     <div class="form__input-group">
                         <label class="form__input-label" for="date">Due Date</label><br>
                         <i class="fa-solid fa-clock form__input-icon"></i>
-                        <input type="date" id="date" class="form__input" autofocus>
+                        <input type="date" id="date" name="date" class="form__input" autofocus>
                         <div class="form__input-error-message"></div>
                     </div>
 
                     <div class="form__input-group">
                         <label class="form__input-label" for="participants">Assign to</label><br>
                         <i class="fa-solid fa-users form__input-icon"></i>
-                        <input type="text" id="participants" class="form__input" autofocus placeholder="Assign to students...">
+                        <input type="text" id="participants" name="participants" class="form__input" autofocus placeholder="Participant email address">
                         <div class="form__input-error-message"><!--This is an error message --></div>
                     </div>
 
                     <div class="container__button">
-                        <button class="form__button form__button--create" type="submit"><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>Add</button>
+                        <button id="submitGoal" class="form__button form__button--create" type="submit"><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>Add</button>
                         <button class="form__button form__button--clear" type="reset" value="Clear Form"><span class="icon"><i class="fa-solid fa-delete-left"></i></span>Clear</button>
                     </div>
                 </form>
