@@ -37,6 +37,7 @@
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .icon {
@@ -51,7 +52,7 @@
 
 .container__student-table {
     width: 230px;
-    min-width: 290px;
+    /* min-width: 290px; */
     padding: 0.8em;
     background-color: var(--color-white);
     border-radius: 15px;
@@ -60,24 +61,6 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.table {
-    width: 100%;
-    font-size: 0.85em;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-.table caption {
-    color: var(--color-white);
-    text-align: center;
-    padding: 0.5em;
-    font-weight: 600;
-    background-color: var(--color-main-lighter);
-    font-size: 1.2em;
-    border-radius: 10px;
-    margin: 0 auto;
 }
 
 .table  td,
@@ -111,11 +94,11 @@
 }
 
 .container__marksheet {
-    min-width: 350px;
+    /* min-width: 350px; */
     padding: 0.8em;
     border-radius: 15px;
     background-color: var(--color-white);
-    flex: 2 0 auto;
+    flex: 2 auto;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -158,7 +141,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* gap: 1rem; */
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .button__left-group {
@@ -166,6 +150,9 @@
     gap: 1rem;
 }
 
+.button__right-group {
+    
+}
 
 .button-edit {
     background-color: var(--color-submit);

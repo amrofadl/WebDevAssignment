@@ -26,19 +26,24 @@
             <div class="container__table-view">
                 <div class="container__student-table">
                     <h2 class="title">Students List</h2>
-                    <table class="table student-table">
-                        <thead>
-                            <tr>
-                                <th>Student</th>
-                                <th>Total Mark</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
+                    <div class="container__table">
+                        <table class="table student-table">
+                            <thead>
+                                <tr>
+                                    <th>Student</th>
+                                    <th>Total Mark</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
 
-                        <tbody>
-                            <?php require_once './php/supervisor_assessment.php' ?>
-                        </tbody>
-                    </table>
+                            <tbody>
+                                <tr>
+                                    <?php require_once './php/supervisor_assessment.php' ?>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
                
                 <div class="container__marksheet">
@@ -59,46 +64,48 @@
                         <div class="container__evaluation-table">
                             <h3 class="">Evaluation Criteria</h3>
                             <hr>
-                            <table class="table evaluation-table">
-                                <thead>
-                                    <tr>
-                                        <th>Criteria</th>
-                                        <th>Mark</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Definition of Problem</td>
-                                        <td>
-                                            <input class="mark" type="number" value="0" min="0" max="25" id="criteriaA" disabled>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Narrative and Flow Charts or Pseudocode</td>
-                                        <td>
-                                            <input class="mark" type="number" value="0" min="0" max="25" disabled>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Coding of Program</td>
-                                        <td>
-                                            <input class="mark" type="number" value="0" min="0" max="25" disabled>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Testing and Presentation</td>
-                                        <td>
-                                            <input class="mark" type="number" value="0" min="0" max="25" disabled>
-                                        </td>
-                                    </tr>
-                                    <tr class="total">
-                                        <td>Total Mark</td>
-                                        <td> 0
-                                            <!-- <input type="text" placeholder="enter mark" value="12" maxlength="2" size="2" disabled> -->
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="container__table">
+                                <table class="table evaluation-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Criteria</th>
+                                            <th>Mark</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Definition of Problem</td>
+                                            <td>
+                                                <input class="mark" type="number" value="0" min="0" max="25" id="criteriaA" disabled>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Narrative and Flow Charts or Pseudocode</td>
+                                            <td>
+                                                <input class="mark" type="number" value="0" min="0" max="25" disabled>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coding of Program</td>
+                                            <td>
+                                                <input class="mark" type="number" value="0" min="0" max="25" disabled>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Testing and Presentation</td>
+                                            <td>
+                                                <input class="mark" type="number" value="0" min="0" max="25" disabled>
+                                            </td>
+                                        </tr>
+                                        <tr class="total">
+                                            <td>Total Mark</td>
+                                            <td> 0
+                                                <!-- <input type="text" placeholder="enter mark" value="12" maxlength="2" size="2" disabled> -->
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
                         <div class="container__button">

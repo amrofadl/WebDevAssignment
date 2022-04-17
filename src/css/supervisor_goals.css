@@ -29,6 +29,7 @@
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .icon {
@@ -90,14 +91,13 @@
 
 .goals-list {
     width: 350px;
-    min-width: 350px;
-    max-height: 480px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-white);
     padding: 0.8em;
     gap: 1rem;
-    flex: 1 0 auto;
+    flex: 1 auto;
     border-radius: 8px;
 }
 
@@ -135,10 +135,9 @@
 
 .container__progress {
     width: 350px;
-    min-width: 410px;
     padding: 0.8em;
     background-color: var(--color-white);
-    flex: 1 0 auto;
+    flex: 1 auto;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -155,18 +154,6 @@
     border-radius: 10px;
 }
 
-.container__table {
-
-}
-
-.table {
-    table-layout: auto;
-    /* margin: 0.5em auto; */
-    width: 100%;
-    font-size: 0.85em;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 
 .table  td,
 .table th {

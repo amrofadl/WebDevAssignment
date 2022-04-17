@@ -16,6 +16,8 @@
 .wrapper__button {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .button--left-group {
@@ -33,6 +35,7 @@
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .icon {
@@ -64,7 +67,7 @@
 .card {
     padding: 1.2em;
     width: 100%;
-    min-width: 450px;
+    /* min-width: 450px; */
     background-color: var(--color-white);
     border-radius: 15px;
 }
@@ -108,23 +111,10 @@
     display: none;
 }
 
-.table {
-    margin: 0.5em auto;
-    width: 95%;
-    font-size: 0.85em;
-    border-collapse: collapse;
-    border-spacing: 0;
+.container__table {
+    overflow-x: auto;
 }
 
-.table caption {
-    color: var(--color-white);
-    text-align: center;
-    padding: 0.5em;
-    font-weight: bold;
-    background-color: var(--color-main-lighter);
-    font-size: 1.2em;
-    border-radius: 10px;
-}
 
 .table  td,
 .table tr , .table th {

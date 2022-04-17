@@ -40,7 +40,7 @@
             
             <div id="upcomingTable" class="card card__upcoming">
                 <h3 class="title">Upcoming Meeting</h3>
-                <div>
+                <div class="container__table">
                     <table class="table table-upcoming">
                         <thead>
                             <tr>
@@ -67,7 +67,7 @@
 
             <div id="pastTable" class="card card__past hidden">
                 <h3 class="title">Past Meeting</h3>
-                <div>
+                <div class="container__table">
                     <table class="table table-past">
                         <thead>
                             <tr>

@@ -40,103 +40,109 @@
 
             <div id="myProject" class="card card__project">
                 <h3 class="title">Projects</h3>
-                <table class="table table--proposal">
-                    <thead>
-                        <tr>
-                            <th>Project Title</th>
-                            <th>Student</th>
-                            <th>Project File</th>
-                            <th>Published Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Project FYP 2</td>
-                            <td>Oliver</td>
-                            <td><a href="">Project.pdf</a></td>
-                            <td>May 1, 2022</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="container__table">
+                    <table class="table table--proposal">
+                        <thead>
+                            <tr>
+                                <th>Project Title</th>
+                                <th>Student</th>
+                                <th>Project File</th>
+                                <th>Published Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Project FYP 2</td>
+                                <td>Oliver</td>
+                                <td><a href="">Project.pdf</a></td>
+                                <td>May 1, 2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
 
             <div id="proposal" class="card card__proposal hidden">
                 <h3 class="title">Proposal Status</h3>
 
-                <table class="table proposal-status--table">
-                    <thead>
-                        <tr>
-                            <th>Project Title</th>
-                            <th>Description</th>
-                            <th>Student</th>
-                            <th>Proposal</th>
-                            <th>Status</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <form id="form1" action="" method="post">
+                <div class="container__table">
+                    <table class="table proposal-status--table">
+                        <thead>
                             <tr>
-                                <td>Hotel Management System Project</td>
-                                <td>Project about managing hotel</td>
-                                <td>Sam</td>
-                                <td><a href="">Project_Proposal.pdf</a></td>
-                                <td>
-                                    <!-- <span class="status status-pending">Pending</span> -->
-                                    <select name="status" id="status">
-                                        <option value="1">Pending</option>
-                                        <option value="2">Accepted</option>
-                                        <option value="3">Rejected</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <button class="table-edit-button" form="form1" type="submit"><span class="icon table-edit-icon"><i class="fa-solid fa-floppy-disk"></i></span>Save</button>
-                                </td>
+                                <th>Project Title</th>
+                                <th>Description</th>
+                                <th>Student</th>
+                                <th>Proposal</th>
+                                <th>Status</th>
+                                <th></th>
                             </tr>
-                        </form>
+                        </thead>
 
-                        <form id="form2" action="" method="post">
-                            <tr>
-                                <td>Project 2</td>
-                                <td>Desc about project 2</td>
-                                <td>Student name</td>
-                                <td><a href="">Project_Proposal.pdf</a></td>
-                                <td>
-                                    <!-- <span class="status status-accepted">Accepted</span> -->
-                                    <select name="status" id="status">
-                                        <option value="1">Pending</option>
-                                        <option value="2">Accepted</option>
-                                        <option value="3">Rejected</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <button class="table-edit-button" form="form2" type="submit"><span class="icon table-edit-icon"><i class="fa-solid fa-floppy-disk"></i></span>Save</button>
-                                </td>
-                            </tr>
-                        </form>
+                        <tbody>
+                            <form id="form1" action="" method="post">
+                                <tr>
+                                    <td>Hotel Management System Project</td>
+                                    <td>Project about managing hotel</td>
+                                    <td>Sam</td>
+                                    <td><a href="">Project_Proposal.pdf</a></td>
+                                    <td>
+                                        <!-- <span class="status status-pending">Pending</span> -->
+                                        <select name="status" id="status">
+                                            <option value="1">Pending</option>
+                                            <option value="2">Accepted</option>
+                                            <option value="3">Rejected</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="table-edit-button" form="form1" type="submit"><span class="icon table-edit-icon"><i class="fa-solid fa-floppy-disk"></i></span>Save</button>
+                                    </td>
+                                </tr>
+                            </form>
 
-                        <form id="form3" action="" method="post">
-                            <tr>
-                                <td>Project 3</td>
-                                <td>Desc about project 3</td>
-                                <td>Student name</td>
-                                <td><a href="">Project_Proposal.pdf</a></td>
-                                <td>
-                                    <!-- <span class="status status-rejected">Rejected</span> -->
-                                    <select name="status" id="status">
-                                        <option value="1">Pending</option>
-                                        <option value="2">Accepted</option>
-                                        <option value="3">Rejected</option>
-                                    </select>
-                                </td>
-                                <td>
-                                    <button class="table-edit-button" form="form3" type="submit"><span class="icon table-edit-icon"><i class="fa-solid fa-floppy-disk"></i></span>Save</button>
-                                </td>
-                            </tr>
-                        </form>
-                    </tbody>
-                </table>
+                            <form id="form2" action="" method="post">
+                                <tr>
+                                    <td>Project 2</td>
+                                    <td>Desc about project 2</td>
+                                    <td>Student name</td>
+                                    <td><a href="">Project_Proposal.pdf</a></td>
+                                    <td>
+                                        <!-- <span class="status status-accepted">Accepted</span> -->
+                                        <select name="status" id="status">
+                                            <option value="1">Pending</option>
+                                            <option value="2">Accepted</option>
+                                            <option value="3">Rejected</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="table-edit-button" form="form2" type="submit"><span class="icon table-edit-icon"><i class="fa-solid fa-floppy-disk"></i></span>Save</button>
+                                    </td>
+                                </tr>
+                            </form>
+
+                            <form id="form3" action="" method="post">
+                                <tr>
+                                    <td>Project 3</td>
+                                    <td>Desc about project 3</td>
+                                    <td>Student name</td>
+                                    <td><a href="">Project_Proposal.pdf</a></td>
+                                    <td>
+                                        <!-- <span class="status status-rejected">Rejected</span> -->
+                                        <select name="status" id="status">
+                                            <option value="1">Pending</option>
+                                            <option value="2">Accepted</option>
+                                            <option value="3">Rejected</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="table-edit-button" form="form3" type="submit"><span class="icon table-edit-icon"><i class="fa-solid fa-floppy-disk"></i></span>Save</button>
+                                    </td>
+                                </tr>
+                            </form>
+                        </tbody>
+                    </table>
+                </div>
+
 
             </div>
 
