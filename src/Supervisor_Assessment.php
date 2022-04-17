@@ -54,10 +54,20 @@
                             <h3 class="-title">Details</h3>
                             <hr>
                             <p>Name: 
-                                <span>Euwern</span>
+                                <span>
+                                    <?php
+                                        echo $student_name;
+                                    ?>
+                                    <!-- Euwern -->
+                                </span>
                             </p>
                             <p>Project Title: 
-                                <span>XXXXXS</span>
+                                <span>
+                                    <!-- <?php
+                                        // echo $project_title
+                                    ?> -->
+                                    XXXXXS
+                                </span>
                             </p>
                         </div>
 
@@ -76,30 +86,45 @@
                                         <tr>
                                             <td>Definition of Problem</td>
                                             <td>
-                                                <input class="mark" type="number" value="0" min="0" max="25" id="criteriaA" disabled>
+                                                <?php 
+                                                    echo '<input class="mark" type="number" value="'.$criteriaA. '" min="0" max="25" name="criteriaA" disabled>';
+                                                ?>
+                                                <!-- <input class="mark" type="number" value="0" min="0" max="25" id="criteriaA" disabled> -->
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Narrative and Flow Charts or Pseudocode</td>
                                             <td>
-                                                <input class="mark" type="number" value="0" min="0" max="25" disabled>
+                                                <?php 
+                                                    echo '<input class="mark" type="number" value="'.$criteriaB. '" min="0" max="25" name="criteriaB" disabled>';
+                                                ?>
+                                                <!-- <input class="mark" type="number" value="0" min="0" max="25" disabled> -->
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Coding of Program</td>
                                             <td>
-                                                <input class="mark" type="number" value="0" min="0" max="25" disabled>
+                                                <?php 
+                                                    echo '<input class="mark" type="number" value="'.$criteriaC. '" min="0" max="25" name="criteriaC" disabled>';
+                                                ?>
+                                                <!-- <input class="mark" type="number" value="0" min="0" max="25" disabled> -->
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Testing and Presentation</td>
                                             <td>
-                                                <input class="mark" type="number" value="0" min="0" max="25" disabled>
+                                                <?php 
+                                                    echo '<input class="mark" type="number" value="'.$criteriaD. '" min="0" max="25" name="criteriaD" disabled>';
+                                                ?>
+                                                <!-- <input class="mark" type="number" value="0" min="0" max="25" disabled> -->
                                             </td>
                                         </tr>
                                         <tr class="total">
                                             <td>Total Mark</td>
-                                            <td> 0
+                                            <td> 
+                                                <?php 
+                                                    echo $criteriaA + $criteriaB + $criteriaC + $criteriaD;
+                                                ?>
                                                 <!-- <input type="text" placeholder="enter mark" value="12" maxlength="2" size="2" disabled> -->
                                             </td>
                                         </tr>

@@ -6,9 +6,13 @@ function disableTxt() {
     document.querySelectorAll('input').forEach(element => element.disabled = false);
   }
 
-  // function reset() {
-  //   document.querySelectorAll('.mark').forEach(element => element.setAttribute("value", "0"));
-  // }
+  function reset(input) {
+    // document.querySelectorAll('.mark').forEach(element => element.setAttribute("value", "0"));
+    for (let i=0; i < input.length; i++) {
+      let inputValue = input[i].getAttribute("value");
+      input[i].setAttribute("placeholder", inputValue);
+    }
+  }
 
 document.addEventListener("DOMContentLoaded", ()=> {
     const editBtn = document.querySelector("#editBtn");
@@ -16,21 +20,23 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const markInput = document.querySelectorAll(".mark");
     const markInputA = document.querySelector("#criteriaA");
 
-    editBtn.addEventListener("click", e=>{
-        e.preventDefault();
-        enableTxt();
-    });
-
-    cancelBtn.addEventListener("click", e => {
-        e.preventDefault();
-        // reset();
-        disableTxt();
-    });
 
     for (let i=0; i < markInput.length; i++) {
       let inputValue = markInput[i].getAttribute("value");
       markInput[i].setAttribute("placeholder", inputValue);
     }
+
+    editBtn.addEventListener("click", e=>{
+        e.preventDefault();
+        enableTxt();
+    });
+
+    cancelBtn.addEventListener("click", () => {
+        // e.preventDefault();
+
+        reset(markInput);
+        disableTxt();
+    });
 
     markInput.forEach(element => {
       element.addEventListener("change", function() {
