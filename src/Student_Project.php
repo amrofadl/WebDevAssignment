@@ -1,4 +1,3 @@
-<?php include '/xampp/htdocs/webdevAssignment/WebDevAssignment/src/php/filesLogic.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +44,8 @@
                 <h2 class="title">My Project</h2>
                 <div class="container__project">
                     <div>
-                        <div class="message">~~ No project ~~</div>
+                        <!-- if no proposal in database echo this message -->
+                        <!-- <div class="message">~~ No project ~~</div> -->
                     </div>
                     <div class="container__details">
                         <p class="details">Project Title: <br>
@@ -67,7 +67,8 @@
                 <h2 class="title">Proposal Status</h2>
                 <div class="container__proposal">
                     <div>
-                        <div class="message">~~ No proposal ~~</div>
+                        <!-- if no proposal in database echo this message -->
+                        <!-- <div class="message">~~ No proposal ~~</div> -->
                     </div>
                     <div class="container__details">
                         <p class="details">Project Title: <br>
@@ -131,6 +132,7 @@
                         <div class="form__input-error-message"><!--This is an error message --></div>
                     </div>
 
+                    <div class="form__input-error-message"><?php include 'includes/../php/filesLogic.php';?></div>
                     <div class="container__button">
                         <button class="form__button form__button--submit" type="submit" name="save"><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>Submit</button>
                         <button class="form__button form__button--clear" type="reset" value="Clear Form"><span class="icon"><i class="fa-solid fa-delete-left"></i></span>Clear</button>

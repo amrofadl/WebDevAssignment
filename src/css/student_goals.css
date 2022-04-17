@@ -18,7 +18,7 @@
 }
 
 .container__goals-list {
-    max-height: 550px;
+    height: 550px;
     background-color: var(--color-white);
     padding: 1.25em;
     display: flex;

@@ -25,7 +25,9 @@
             <div class="container__goals-list">
                 <h3 class="title">Goals List</h3>
                 <div class="container__card">
+
                     <?php require_once './php/student_goals_display.php' ?>
+
                 </div>
             </div>
         </div>

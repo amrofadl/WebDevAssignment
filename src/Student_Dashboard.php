@@ -20,7 +20,7 @@
 
     <div class="container__content">
         <div class="container__dashboard">
-            <h1>Dashboard</h1>
+            <h1 class="content-title">Dashboard</h1>
             <hr>
             <div class="container__card">
                 <div class="card card-left">

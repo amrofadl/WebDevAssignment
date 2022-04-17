@@ -32,6 +32,7 @@ h1, h2 {
 
 .card {
     background-color: var(--color-white);
+    height: 500px;
     padding: 1em;
     border-radius: 15px;
     display: flex;
@@ -40,13 +41,12 @@ h1, h2 {
 }
 
 .card-left {
-    flex: 1 0 auto;
+    flex: 1 auto;
     width: 280px;
-    min-width: 320px;
 }
 
 .card-right {
-    flex: 2 0 auto;
+    flex: 2 auto;
 }
 
 .container__table::-webkit-scrollbar {
@@ -71,15 +71,6 @@ h1, h2 {
     background-color: var(--color-main-lighter);
     font-size: 1.2em;
     border-radius: 10px;
-}
-
-
-
-.table {
-    width: 100%;
-    font-size: 0.85em;
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
 

@@ -16,6 +16,8 @@
 .wrapper__button {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .button--left-group {
@@ -33,6 +35,7 @@
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .wrapper__button-card {
@@ -78,11 +81,10 @@
 }
 
 .card {
+    width: 100%;
     padding: 1.2em;
     background-color: var(--color-white);
     border-radius: 15px;
-    width: 500px;
-    max-width: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -127,13 +129,6 @@
     text-align: center;
 }
 
-.table {
-    margin: 0.5em auto;
-    width: 95%;
-    font-size: 0.85em;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 
 .table caption {
     color: var(--color-white);
@@ -264,6 +259,7 @@
 
 .form__input-error-message {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     font-size: 0.85rem;
     color: var(--color-error);
 }
@@ -271,12 +267,12 @@
 .container__button {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .form__button {
-    width: 60%;
     padding: 0.7em 1.2em;
     font-weight: bold;
     font-size: 1.1rem;
@@ -287,7 +283,7 @@
     outline: none;
     cursor: pointer;
     background-color: var(--color-main);
-    margin: 0 auto;
+    white-space: nowrap;
 }
 
 .form__button--submit {

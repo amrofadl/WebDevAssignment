@@ -38,6 +38,10 @@ body {
     min-height: 100vh;
 }
 
+.content-title {
+    color: var(--color-main);
+}
+
 .container__table {
     overflow-x: auto;
     overflow-y: auto;
