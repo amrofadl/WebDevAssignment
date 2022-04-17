@@ -127,10 +127,16 @@
                         <div class="form__input-error-message"><!--This is an error message --></div>
                     </div>
 
-                    <div class="form__input-group">
-                        <label class="form__input-label" for="participants">Participants</label><br>
+                    <div class="">
+                        <label class="form__input-label" for="participants">Students</label><br>
                         <i class="fa-solid fa-users form__input-icon"></i>
-                        <input type="text" id="participants" class="form__input" autofocus placeholder="Invite students...">
+                        <select name="participants" id="participants">
+                            <option>Select Students</option>
+                            <option value="1">Sam</option>
+                            <option value="2">Oliver</option>
+                            <option value="3" >Student Name 3</option>
+                        </select>
+                        <!-- <input type="text" id="participants" class="form__input" autofocus placeholder="Invite students..."> -->
                         <div class="form__input-error-message"><!--This is an error message --></div>
                     </div>
 

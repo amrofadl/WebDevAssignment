@@ -177,6 +177,7 @@
                         <label class="form__input-label" for="student">Student</label><br>
                         <i class="fa-solid fa-users form__input-icon"></i>
                         <select name="student" id="student">
+                            <option>Select Students</option>
                             <option value="1">Sam</option>
                             <option value="2">Oliver</option>
                             <option value="3" >Student Name 3</option>
