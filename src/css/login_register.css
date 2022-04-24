@@ -1,11 +1,3 @@
-body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem; */
-    /* margin: 5rem; */
-}
 
 .container__header {
     display: flex;
@@ -52,12 +44,17 @@ form {
     display: none;
 }
 
+#login .form__title {
+    margin-top: 2rem;
+}
+
 .form__title {
     text-align: center;
-    margin-top: 2rem;
     margin-bottom: 1rem;
     color: var(--color-main);
 }
+
+
 
 .form__title--register {
     margin-top: 0;
