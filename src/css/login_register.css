@@ -104,6 +104,30 @@ form {
     transition: background 0.2s;
 }
 
+.select-usertype {
+    margin-left: 0.5em;
+}
+
+
+.container__usertype {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+label {
+    color: var(--color-main);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.container__usertype i {
+    position: unset;
+    color: var(--color-main);
+    min-width: 50px;
+    text-align: center;
+}
+
 .form__input:focus {
     -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);
     -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.45);

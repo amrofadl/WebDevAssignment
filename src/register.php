@@ -42,6 +42,18 @@
                 <input type="password" id="signupPassword" class="form__input" autofocus placeholder="Password" name="password">
                 <div class="form__input-error-message"><!--This is an error message --></div>
             </div>
+
+            <div class="form__input-group select-usertype">
+                <label for="usertype">Register as..</label><br>
+                <div class="container__usertype">
+                    <i class="fa-solid fa-user-group"></i>
+                    <select name="usertype" id="usertype">
+                        <option value="student">Student</option>
+                        <option value="supervisor">Supervisor</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="container__button">
                 <button class="form__button" type="submit" value="signup">Sign Up</button>
             </div>
