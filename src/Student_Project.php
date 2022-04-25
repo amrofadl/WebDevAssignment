@@ -69,13 +69,13 @@
                         <span class="details__output">Project X</span></p>
                         <p class="details">Supervisor: <br>
                         <span class="details__output">Dr. Gadget</span></p>
-                        <form id="fileForm" action="Student_Project.php" method="post" enctype="multipart/form-data">
+                        <form id="fileForm" action="" method="POST">
                             <label class="details">File Upload:</label> <br>
-                            <input type="file" name="myfile" id="file">
+                            <input type="file" id="file">
                         </form>
                     </div>
                     <div class="wrapper__button-card">
-                        <button class="button button-card button-card--upload" type="submit" form="fileForm" name="save"><span class="icon"><i class="fa-solid fa-upload"></i></span>Upload</button>
+                        <button class="button button-card button-card--upload" type="submit" form="fileForm"><span class="icon"><i class="fa-solid fa-upload"></i></span>Upload</button>
                     </div>
                 </div>
             </div>
