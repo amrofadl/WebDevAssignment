@@ -2,7 +2,7 @@
     require 'config.php';
     session_start();
 
-    $usernameErr = $emailErr = $passwordErr = $loginErr = $registerErr =  "";
+    $usernameErr = $emailErr = $passwordErr = $loginErr = $registerErr = $supervisorListErr = "";
     $username = $email = "";
     $errors = array(); 
 
