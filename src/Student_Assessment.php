@@ -1,3 +1,18 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+
+  $curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +32,9 @@
     
     <?php include 'includes/../php/student_nav-bar.inc.php'; ?>
     <?php include 'includes/../php/hamburger.inc.php'; ?>
-    <?php include './php/student_assessment.php'; ?>
+    <?php 
+    // include './php/student_assessment.php'; 
+    ?>
 
     <div class="container__content">
         <div class="container__assessment">

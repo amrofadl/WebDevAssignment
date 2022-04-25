@@ -4,8 +4,8 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $email_student = $link->query("SELECT * FROM student WHERE email_address = '$email'");
-    $email_supervisor = $link->query("SELECT * FROM supervisor WHERE email_address = '$email'");
+    $email_student = $link->query("SELECT * FROM student WHERE stud_email = '$email'");
+    $email_supervisor = $link->query("SELECT * FROM supervisor WHERE sv_email = '$email'");
 
     if ($email_student->num_rows > 0) {
         $student = $email_student->fetch_assoc();

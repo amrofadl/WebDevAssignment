@@ -3,10 +3,7 @@
         <div>
             <img class="" src="./images/User.png" alt="User Icon">
         </div>
-        <div id="userType"><?php
-            session_start();
-            echo($_SESSION['username']);
-            ?></div>
+        <div id="userType"><?php echo $_SESSION['username'];?></div>
         <div id="container__close" class="container__close">
             <button id="close-nav"><i class="fa-solid fa-xmark fa-lg"></i></button>
          </div>
@@ -22,7 +19,8 @@
             </ul>
         </div>
         <div class="wrapper__sign-out">
-            <a id="signout" href="login.php">Sign Out</a>
+            <?php echo '<a id="signout" href="'.$curPageName.'?logout="1"">Sign Out</a>';?>
+            <!-- <a id="signout" href="login.php">Sign Out</a> -->
         </div>
     </div>
 </div>
