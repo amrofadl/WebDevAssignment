@@ -32,7 +32,7 @@ form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
 }
 
 .form__message, .form__text {
@@ -40,7 +40,7 @@ form {
     margin-top: 1rem;
 }
 
-.form--hidden {
+.hidden {
     display: none;
 }
 
@@ -53,8 +53,6 @@ form {
     margin-bottom: 1rem;
     color: var(--color-main);
 }
-
-
 
 .form__title--register {
     margin-top: 0;
@@ -101,12 +99,12 @@ form {
     transition: background 0.2s;
 }
 
-.select-usertype {
+#select-usertype, #select-supervisor {
     margin-left: 0.5em;
 }
 
 
-.container__usertype {
+.container__dropdown {
     display: flex;
     gap: 1rem;
     margin-top: 0.5rem;
@@ -118,7 +116,7 @@ label {
     font-size: 0.9rem;
 }
 
-.container__usertype i {
+.container__dropdown i {
     position: unset;
     color: var(--color-main);
     min-width: 50px;

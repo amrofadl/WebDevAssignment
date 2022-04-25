@@ -4,7 +4,7 @@
             <img class="" src="./images/User.png" alt="User Icon">
         </div>
         <div id="userType"><?php
-            session_start();
+            // session_start();
             echo($_SESSION['username']);
             ?></div>
         <div id="container__close" class="container__close">
