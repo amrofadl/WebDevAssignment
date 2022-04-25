@@ -1,18 +1,3 @@
-<?php 
-  session_start(); 
-
-  if (!isset($_SESSION['username'])) {
-  	$_SESSION['msg'] = "You must log in first";
-  	header('location: login.php');
-  }
-  if (isset($_GET['logout'])) {
-  	session_destroy();
-  	unset($_SESSION['username']);
-  	header("location: login.php");
-  }
-
-  $curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,9 +38,7 @@
 
                             <tbody>
                                 <tr>
-                                    <?php 
-                                    // require_once './php/supervisor_assessment.php' 
-                                    ?>
+                                    <?php require_once './php/supervisor_assessment.php' ?>
                                 </tr>
                             </tbody>
                         </table>
